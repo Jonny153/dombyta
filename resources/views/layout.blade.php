@@ -33,7 +33,7 @@
 
             <div class="navbar fixed-top navbar-dark bg-dark box-shadow">
                 <div class="container d-sm-flex justify-content-between">
-                    <a href="#" class="navbar-brand d-flex align-items-center">
+                    <a href="/" class="navbar-brand d-flex align-items-center">
                         <img src="/img/logo-50y.png" class="img-responsive main-logo" />
                     </a>
                     <p class="small text-light mb-0 mt-2 mr-auto d-none d-xl-block text-center">Полный спектр бытовых услуг<br> в Калининграде и области</p>
@@ -59,7 +59,7 @@
 
                                 <ul class="nav">
                                     <li class="nav-item main">
-                                        <a class="nav-link" href="#">Сантехник</a>
+                                        <a class="nav-link" href="santehnik">Сантехник</a>
                                     </li>
                                 </ul>
 
@@ -227,10 +227,10 @@
                         <div class="row">
                             <div class="col">
                                 <nav class="nav flex-column text-uppercase text-center">
-                                    <a class="nav-link" href="/">Сантехник</a>
+                                    <a class="nav-link" href="/santehnik">Сантехник</a>
                                     <a class="nav-link" href="#">Электрик</a>
                                     <a class="nav-link" href="#">Отделка и ремонт</a>
-                                    <a class="nav-link" href="/">Уборка</a>
+                                    <a class="nav-link" href="#">Уборка</a>
                                     <a class="nav-link" href="#">Химчистка</a>
                                     <a class="nav-link" href="#">Дезинсекция</a>
                                 </nav>
