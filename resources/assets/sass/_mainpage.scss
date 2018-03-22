@@ -1,0 +1,30 @@
+.professional_builder{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    .builder_all{
+        .builder{
+            text-align: center;
+            padding-bottom: 25px;
+
+            h4{
+                font: 700 18px $roboto;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+        }
+    }
+}
+
+
+.gray_bgr {
+    background: #e3e3e3;
+}
+
+.black_texture_bgr {
+    background: url(/img/black-texture.jpg);
+}
+
+#map {
+    height: 500px;
+}

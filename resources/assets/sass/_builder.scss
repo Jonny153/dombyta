@@ -1,0 +1,21 @@
+.professional_builder{
+    background: #e3e3e3;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    .builder_all{
+        .builder{
+            text-align: center;
+            padding-bottom: 25px;
+
+            h4{
+                font: 700 18px $roboto;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            p{
+                font: 400 14px/26px $roboto;
+
+            }
+        }
+    }
+}

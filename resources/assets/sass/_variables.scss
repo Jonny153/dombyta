@@ -1,0 +1,36 @@
+
+
+// Colors
+$black:    #000;
+$white:    #fff;
+$yellow:   #fed017;
+
+$dark:     $black;
+$primary:  $yellow;
+$info:     $white;
+
+// Typography
+$os:'Oswald', sans-serif;
+$roboto:'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:300,300i,400,400i,500,500i,700,700i');
+$font-family-sans-serif: $roboto;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+
+
+
+$border-radius:               0;
+$border-radius-lg:            0;
+$border-radius-sm:            0;
+
+
+$navbar-dark-color:                 $primary;
+$navbar-dark-hover-color:           $white;
+$navbar-dark-toggler-border-color:  $primary;
+
+@mixin transition($property: all, $duration: 0.5s, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay;
+}
+
+
+

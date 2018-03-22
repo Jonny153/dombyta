@@ -1,0 +1,100 @@
+
+.btn.btn-xl {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    @media (max-width:991px) {
+        padding: 0.7rem 1.1rem;
+        font-size: 1rem;
+        line-height: 1;
+    }
+}
+
+
+.heading {
+    position: relative;
+
+    .capture {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    h1 {
+        @media (max-width:991px) {
+            font-size: 2rem;
+        }
+
+    }
+
+
+}
+
+
+.icon-font {
+    text-align: center;
+    font-size: 12rem;
+    line-height: 3rem;
+    small {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: block;
+
+    }
+}
+
+a.tel-context-dark {
+    color: $primary;
+    font-size: $font-size-base * 1.5;
+    white-space: nowrap;
+    &:hover {
+        text-decoration: underline;
+        color: white;
+    }
+}
+
+form.outline-primary {
+    input,
+    input:focus {
+        border-color: $primary;
+        background: none;
+        color: $primary;
+
+    }
+}
+
+#services {
+    .card-header {
+
+
+
+
+
+
+        a {
+            background: #aaaaaa;
+            background: linear-gradient(to bottom, #aaaaaa 0%,#eeeeee 50%,#aaaaaa 100%);
+            display: block;
+            color: black;
+            height: 150px;
+            font-size: 3rem;
+            line-height: 3rem;
+            font-weight: bold;
+
+            &:hover {
+                background: #fed017;
+                background: linear-gradient(to bottom, #fed017 0%,#ffe88d 50%,#fed017 100%);
+                text-decoration: none;
+            }
+            img {
+
+            }
+
+
+        }
+
+    }
+}
