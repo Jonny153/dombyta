@@ -9,10 +9,15 @@ require('./bootstrap');
 require('jquery-touchswipe');
 
 require('owl.carousel');
+window.zenscroll = require('zenscroll');
 
+
+zenscroll.setup(1000, 20);
 
 window.Vue = require('vue');
 window.WOW = require('wow.js');
+
+
 
 
 /**
@@ -26,6 +31,8 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 const app = new Vue({
    // el: '#app'
 });
+
+
 
 
 let wow = new WOW(
@@ -48,7 +55,7 @@ wow.init();
 $(function() {
     let $carusel = $("#carousel");
 
-    $carusel.swipe( {
+    $carusel.swipe({
 
         swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
            // console.log("You swiped " + direction );
@@ -62,6 +69,26 @@ $(function() {
         }
     });
 
+    let $carusel2 = $("#carouselFeedback");
+
+    $carusel2.swipe({
+
+        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+            // console.log("You swiped " + direction );
+
+            if(direction === 'left') {
+                $carusel2.carousel('next');
+            }
+            if(direction === 'right') {
+                $carusel2.carousel('prev');
+            }
+        }
+    });
+
+});
+
+$('.noaction').on('click', function (e) {
+    e.preventDefault();
 });
 
 
@@ -87,3 +114,11 @@ $(function() {
 
 })(jQuery);
 
+// прячем меню при клике вне его
+$(document).mouseup(function(e) {
+    let div = $("#navbarHeader");
+    let link = $('a.nav-link');
+    if ((!div.is(e.target) && div.has(e.target).length === 0) || link.is(e.target)) {
+        div.collapse('hide');
+    }
+});

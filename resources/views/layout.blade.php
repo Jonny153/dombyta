@@ -45,7 +45,7 @@
                             <a class="tel mr-5" href="tel:+79637387434">+7-963-738-7434</a>
                         </div>
 
-                        <a href="#" class="btn btn-primary mr-5 d-none d-lg-block">Заказать звонок</a>
+                        <a href="#" data-toggle="modal" data-target="#callModal" class="btn btn-primary mr-5 d-none d-lg-block noZensmooth">Заказать звонок</a>
 
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -54,172 +54,51 @@
                 </div>
                 <div class="collapse bg-dark w-100" id="navbarHeader">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-4 col-lg-2 py-2">
+                        <div class="row d-flex">
 
-                                <ul class="nav">
-                                    <li class="nav-item main">
-                                        <a class="nav-link" href="santehnik">Сантехник</a>
-                                    </li>
-                                </ul>
-
-                                <ul class="nav flex-column left-border d-none d-md-flex">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Водоснабжение</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Отопление</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Канализация</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Монтаж санфаянса</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link d-flex" href="#">
-                                            <div class="align-self-end float-left mr-2 pb-1"><i class="fas fa-2x fa-exclamation-triangle text-info"></i></div> Аварийный вызов
-                                        </a>
-                                    </li>
-                                </ul>
-
+                            <div class="col-xs-12 col-sm-6 col-lg-3 py-2 order-sm-2">
+                                <nav class="nav main flex-column text-center">
+                                    <a class="nav-link" href="/santehnik">Сантехник</a>
+                                    <a class="nav-link" href="#">Электрик</a>
+                                    <a class="nav-link" href="#">Отделка</a>
+                                    <a class="nav-link" href="#">Уборка</a>
+                                    <a class="nav-link" href="#">Химчистка</a>
+                                    <a class="nav-link" href="#">Дезинсекция</a>
+                                </nav>
                             </div>
-                            <div class="col-xs-12 col-sm-4 col-lg-2 py-2">
-
-                                <ul class="nav">
-                                    <li class="nav-item main">
-                                        <a class="nav-link" href="#">Электрик</a>
-                                    </li>
-                                </ul>
-
-                                <ul class="nav flex-column left-border d-none d-md-flex">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Монтаж проводки</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Установка электроприборов</a>
-                                    </li>
-                                    <li class="nav-item">
-
-                                        <a class="nav-link d-flex" href="#">
-                                            <div class="align-self-end float-left mr-2 pb-1"><i class="fas fa-2x fa-exclamation-triangle text-info"></i></div> Аварийный вызов
-                                        </a>
-                                    </li>
-
-                                </ul>
-
+                            <div class="col-xs-12 col-sm-6 col-lg-3 py-2">
+                                <nav class="nav flex-column text-center">
+                                    <a class="nav-link" href="/">Главная</a>
+                                    <a class="nav-link" href="#about">О нас</a>
+                                    <a class="nav-link" href="/#services">Услуги</a>
+                                    <a class="nav-link" href="#emergency">
+                                       <i class="fas fa-lg fa-exclamation-triangle"></i> Аварийный вызов
+                                    </a>
+                                    <a class="nav-link" href="/#feedback">Отзывы</a>
+                                    <a class="nav-link" href="/#contacts">Контакты</a>
+                                </nav>
                             </div>
-                            <div class="col-xs-12 col-sm-4 col-lg-2 py-2">
-
-                                <ul class="nav">
-                                    <li class="nav-item main">
-                                        <a class="nav-link" href="#">Отделка</a>
-                                    </li>
-                                </ul>
-
-                                <ul class="nav flex-column left-border d-none d-md-flex">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Серый ключ</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Внутренние работы</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Внешние работы</a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <div class="w-100 d-none d-md-block d-lg-none"></div>
-                            <div class="col-xs-12 col-sm-4 col-lg-2 py-2">
 
 
-                                <ul class="nav">
-                                    <li class="nav-item main">
-                                        <a class="nav-link" href="#">Уборка</a>
-                                    </li>
-                                </ul>
-
-                                <ul class="nav flex-column left-border d-none d-md-flex">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Мытьё окон, лоджий</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Генеральная уборка</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">После ремонта, стройки</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">После пожара, затопления</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Уборка дворов, гаражей</a>
-                                    </li>
-
-                                </ul>
-
-
-                            </div>
-                            <div class="col-xs-12 col-sm-4 col-lg-2 py-2">
-
-                                <ul class="nav">
-                                    <li class="nav-item main">
-                                        <a class="nav-link" href="#">Химчистка</a>
-                                    </li>
-                                </ul>
-
-                                <ul class="nav flex-column left-border d-none d-md-flex">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Мягкой мебели</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Ковровых покрытий</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Одежды</a>
-                                    </li>
-
-                                </ul>
-
-                            </div>
-                            <div class="col-xs-12 col-sm-4 col-lg-2 py-2">
-
-                                <ul class="nav">
-                                    <li class="nav-item main">
-                                        <a class="nav-link" href="#">Дезинсекция</a>
-                                    </li>
-                                </ul>
-
-                                <ul class="nav flex-column left-border d-none d-md-flex">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Жилые помещения</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Промышленные помещения</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Кафе, рестораны</a>
-                                    </li>
-
-                                </ul>
-
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </header>
 
 
         @yield('content')
 
+        @include('call-modal')
+
         <footer>
             @section('footer')
                 <section class="social bg-primary py-4">
                     <div class="container d-flex justify-content-end">
-                        <a href="#" class="ml-5"><i class="fab fa-vk fa-2x"></i></a>
-                        <a href="#" class="ml-5"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a class="mx-4 text-dark lead font-weight-bold d-none d-lg-block" href="maito:info@dombyta39.ru">info@dombyta39.ru</a>
+                        <a href="#" class="mx-4 text-dark"><i class="fab fa-vk fa-2x"></i></a>
+                        <a href="#" class="mx-4 text-dark"><i class="fab fa-instagram fa-2x"></i></a>
                     </div>
                 </section>
                 <section class="bottom-menu bg-dark py-4">
@@ -228,11 +107,21 @@
                             <div class="col">
                                 <nav class="nav flex-column text-uppercase text-center">
                                     <a class="nav-link" href="/santehnik">Сантехник</a>
-                                    <a class="nav-link" href="#">Электрик</a>
-                                    <a class="nav-link" href="#">Отделка и ремонт</a>
+                                    <a class="nav-link" href="/electrik">Электрик</a>
+                                    <a class="nav-link" href="/">Отделка и ремонт</a>
                                     <a class="nav-link" href="#">Уборка</a>
                                     <a class="nav-link" href="#">Химчистка</a>
                                     <a class="nav-link" href="#">Дезинсекция</a>
+                                </nav>
+                            </div>
+                            <div class="col">
+                                <nav class="nav flex-column text-center">
+                                    <a class="nav-link" href="@if ($page != 'main')/@else#@endif">Главная</a>
+                                    <a class="nav-link" href="@if ($page != 'main')/@endif#about">О нас</a>
+                                    <a class="nav-link" href="@if ($page != 'main')/@endif#services">Услуги</a>
+                                    <a class="nav-link" href="@if ($page != 'main')/@endif#emergency">Аварийный вызов</a>
+                                    <a class="nav-link" href="@if ($page != 'main')/@endif#feedback">Отзывы</a>
+                                    <a class="nav-link" href="@if ($page != 'main')/@endif#contacts">Контакты</a>
                                 </nav>
                             </div>
 
@@ -247,11 +136,13 @@
                 </section>
                 <section class="bg-light p-3">
                     <div class="container">
-                        <p class="mb-0">©2018 Компания «Дом быта 39» <a href="maito:info@dombyta39.ru">info@dombyta39.ru</a></p>
+                        <p class="mb-0">&copy;@php echo date('Y'); @endphp Компания «Дом быта 39» <a href="maito:info@dombyta39.ru">info@dombyta39.ru</a></p>
                     </div>
                 </section>
             @show
         </footer>
+
+
 
 
         <!-- Scripts -->

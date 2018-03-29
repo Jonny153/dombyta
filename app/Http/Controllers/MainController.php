@@ -10,15 +10,18 @@ class MainController extends Controller
     //
     public function index()
     {
-        return view('main');
+        return view('main',
+            [
+                'page' => 'main'
+            ]);
     }
 
-    public function category($category, $group = null, $service = null)
+    public function category($category, $service = null)
     {
         $categoryModel = Category::where('alias', $category)->firstOrFail();
 
-        if (is_null($group)) {
-            return view('groups/' . $category);
+        if (is_null($service)) {
+            return view('categories/' . $category, ['page' => $category]);
         }
 
         return false;

@@ -56,15 +56,7 @@ a.tel-context-dark {
     }
 }
 
-form.outline-primary {
-    input,
-    input:focus {
-        border-color: $primary;
-        background: none;
-        color: $primary;
 
-    }
-}
 
 #services {
     .card-header {
@@ -75,22 +67,35 @@ form.outline-primary {
 
 
         a {
-            background: #aaaaaa;
-            background: linear-gradient(to bottom, #aaaaaa 0%,#eeeeee 50%,#aaaaaa 100%);
+            background: #fed017;
+            background: linear-gradient(to bottom, #fed017 0%,#ffe88d 50%,#fed017 100%);
             display: block;
             color: black;
             height: 150px;
             font-size: 3rem;
             line-height: 3rem;
             font-weight: bold;
+            @media (max-width:991px) {
+                height: 75px;
+                font-size: 1.2rem;
+                line-height: 1.2rem;
+            }
+
+            &.collapsed {
+                background: #aaaaaa;
+                background: linear-gradient(to bottom, #aaaaaa 0%,#eeeeee 50%,#aaaaaa 100%);
+            }
 
             &:hover {
                 background: #fed017;
                 background: linear-gradient(to bottom, #fed017 0%,#ffe88d 50%,#fed017 100%);
                 text-decoration: none;
             }
-            img {
-
+            img.service-icon {
+                @media (max-width:991px) {
+                    width: 75px;
+                    margin-left: 0.5rem;
+                }
             }
 
 

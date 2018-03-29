@@ -13,102 +13,89 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <a href="#">
-                        <!--
-                        If you need more browser support use https://scottjehl.github.io/picturefill/
-                        If a picture looks blurry on a retina device you can add a high resolution like this
-                        <source srcset="img/blog-post-1000x600-2.jpg, blog-post-1000x600-2@2x.jpg 2x" media="(min-width: 768px)">
 
-                        What image sizes should you use? This can help - https://codepen.io/JacobLett/pen/NjramL
-                         -->
-                        <picture>
-                            <source srcset="/img/slider/1920x800/main.jpg" media="(min-width: 1400px)">
-                            <source srcset="/img/slider/1400x700/main.jpg" media="(min-width: 769px)">
-                            <source srcset="/img/slider/800x500/main.jpg" media="(min-width: 577px)">
-                            <img srcset="/img/slider/600x500/main.jpg" alt="responsive image" class="d-block img-fluid">
-                        </picture>
+                    <picture>
+                        <source srcset="/img/slider/1920x800/main.jpg" media="(min-width: 1400px)">
+                        <source srcset="/img/slider/1400x700/main.jpg" media="(min-width: 769px)">
+                        <source srcset="/img/slider/800x500/main.jpg" media="(min-width: 577px)">
+                        <img srcset="/img/slider/600x500/main.jpg" alt="responsive image" class="d-block img-fluid">
+                    </picture>
 
-                        <div class="carousel-caption">
-                            <div class="mb-2">
-                                <h2 class="display-4 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Дом Быта 39</h2>
-                                <p class="lead wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Весь спектр бытовых услуг в Калининграде! Сантехник, электрик, отделка, уборка, химчистка, дезинсекция.</p>
-                                <span class="btn btn-lg btn-primary wow bounceIn" data-wow-duration="1s" data-wow-delay="2s">Заказать звонок</span>
-                            </div>
+                    <div class="carousel-caption">
+                        <div class="mb-2">
+                            <h2 class="display-4 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Дом Быта 39</h2>
+                            <p class="lead wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Весь спектр бытовых услуг в Калининграде! Сантехник, электрик, отделка, уборка, химчистка, дезинсекция.</p>
+                            <span  data-toggle="modal" data-target="#callModal" class="btn btn-lg btn-primary wow bounceIn" data-wow-duration="1s" data-wow-delay="2s">Заказать звонок</span>
                         </div>
-                    </a>
+                    </div>
+
                 </div>
                 <!-- /.carousel-item -->
 
                 <div class="carousel-item">
-                    <a href="#">
 
-                        <picture>
-                            <source srcset="/img/slider/1920x800/santehnik.jpg" media="(min-width: 1400px)">
-                            <source srcset="/img/slider/1400x700/santehnik.jpg" media="(min-width: 769px)">
-                            <source srcset="/img/slider/800x500/santehnik.jpg" media="(min-width: 577px)">
-                            <img srcset="/img/slider/600x500/santehnik.jpg" alt="responsive image" class="d-block img-fluid">
-                        </picture>
+                    <picture>
+                        <source srcset="/img/slider/1920x800/santehnik.jpg" media="(min-width: 1400px)">
+                        <source srcset="/img/slider/1400x700/santehnik.jpg" media="(min-width: 769px)">
+                        <source srcset="/img/slider/800x500/santehnik.jpg" media="(min-width: 577px)">
+                        <img srcset="/img/slider/600x500/santehnik.jpg" alt="responsive image" class="d-block img-fluid">
+                    </picture>
 
-                        <div class="carousel-caption">
-                            <div class="mb-2">
-                                <h2 class="display-4 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Услуги сантехника</h2>
-                                <p class="lead wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Компания «Дом Быта 39» предоставляет весь спектр сантехнических услуг в Калининграде!</p>
-                                <span class="btn btn-lg btn-primary wow bounceIn" data-wow-duration="1s" data-wow-delay="2s">Выбрать услугу</span>
-                            </div>
+                    <div class="carousel-caption">
+                        <div class="mb-2">
+                            <h2 class="display-4 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Услуги сантехника</h2>
+                            <p class="lead wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Компания «Дом Быта 39» предоставляет весь спектр сантехнических услуг в Калининграде!</p>
+                            <a href="/santehnik" class="btn btn-lg btn-primary wow bounceIn" data-wow-duration="1s" data-wow-delay="2s">Выбрать услугу</a>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <!-- /.carousel-item -->
 
                 <div class="carousel-item">
-                    <a href="#">
 
-                        <picture>
-                            <source srcset="/img/slider/1920x800/electrik.jpg" media="(min-width: 1400px)">
-                            <source srcset="/img/slider/1400x700/electrik.jpg" media="(min-width: 769px)">
-                            <source srcset="/img/slider/800x500/electrik.jpg" media="(min-width: 577px)">
-                            <img srcset="/img/slider/600x500/electrik.jpg" alt="responsive image" class="d-block img-fluid">
-                        </picture>
+                    <picture>
+                        <source srcset="/img/slider/1920x800/electrik.jpg" media="(min-width: 1400px)">
+                        <source srcset="/img/slider/1400x700/electrik.jpg" media="(min-width: 769px)">
+                        <source srcset="/img/slider/800x500/electrik.jpg" media="(min-width: 577px)">
+                        <img srcset="/img/slider/600x500/electrik.jpg" alt="responsive image" class="d-block img-fluid">
+                    </picture>
 
-                        <div class="carousel-caption">
-                            <div class="mb-2">
-                                <h2 class="display-4 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Услуги электрика</h2>
-                                <p class="lead wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Полный перечень электромонтажных услуг в Калининграде!</p>
-                                <span class="btn btn-lg btn-primary wow bounceIn" data-wow-duration="1s" data-wow-delay="2s">Выбрать услугу</span>
-                            </div>
+                    <div class="carousel-caption">
+                        <div class="mb-2">
+                            <h2 class="display-4 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Услуги электрика</h2>
+                            <p class="lead wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Полный перечень электромонтажных услуг в Калининграде!</p>
+                            <a href="/electrik" class="btn btn-lg btn-primary wow bounceIn" data-wow-duration="1s" data-wow-delay="2s">Выбрать услугу</a>
                         </div>
-                    </a>
+                    </div>
+
                 </div>
                 <!-- /.carousel-item -->
 
                 <div class="carousel-item">
-                    <a href="#">
+                    <picture>
+                        <source srcset="/img/slider/1920x800/remont.jpg" media="(min-width: 1400px)">
+                        <source srcset="/img/slider/1400x700/remont.jpg" media="(min-width: 769px)">
+                        <source srcset="/img/slider/800x500/remont.jpg" media="(min-width: 577px)">
+                        <img srcset="/img/slider/600x500/remont.jpg" alt="responsive image" class="d-block img-fluid">
+                    </picture>
 
-                        <picture>
-                            <source srcset="/img/slider/1920x800/remont.jpg" media="(min-width: 1400px)">
-                            <source srcset="/img/slider/1400x700/remont.jpg" media="(min-width: 769px)">
-                            <source srcset="/img/slider/800x500/remont.jpg" media="(min-width: 577px)">
-                            <img srcset="/img/slider/600x500/remont.jpg" alt="responsive image" class="d-block img-fluid">
-                        </picture>
-
-                        <div class="carousel-caption">
-                            <div class="mb-2">
-                                <h2 class="display-4 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Отделка и ремонт</h2>
-                                <p class="lead wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Профессионалы компании «Дом Быта 39» выполнят любые отделочные, строительные и ремонтные работы в Калининграде!</p>
-                                <span class="btn btn-lg btn-primary wow bounceIn" data-wow-duration="1s" data-wow-delay="2s">Выбрать услугу</span>
-                            </div>
+                    <div class="carousel-caption">
+                        <div class="mb-2">
+                            <h2 class="display-4 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Отделка и ремонт</h2>
+                            <p class="lead wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Профессионалы компании «Дом Быта 39» выполнят любые отделочные, строительные и ремонтные работы в Калининграде!</p>
+                            <a href="/otdelka_i_remont" class="btn btn-lg btn-primary wow bounceIn" data-wow-duration="1s" data-wow-delay="2s">Выбрать услугу</a>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <!-- /.carousel-item -->
 
             </div>
             <!-- /.carousel-inner -->
-            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <a class="carousel-control-prev noAction noZensmooth" href="#carousel" role="button" data-slide="prev">
                 <i class="fas fa-chevron-left fa-2x text-primary"></i>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <a class="carousel-control-next noAction noZensmooth" href="#carousel" role="button" data-slide="next">
                 <i class="fas fa-chevron-right fa-2x text-primary"></i>
                 <span class="sr-only">Next</span>
             </a>
@@ -146,10 +133,10 @@
                 <div class="row">
                     <div class="col">
                         <div class="title_white">
-                            <h2>О нас</h2>
+                            <h2 id="about">О нас</h2>
                         </div>
                         <p class="lead text-center text-info">
-                            Наша компания имеет большой спектр услуг и обслуживает как физических, так и юридических лиц. Сервисная компания, кроме домашнего мастера, предлагает и более объемные услуги такие как, полноценный ремонт и отделка помещений, дезинфекция с целью соблюдения санитарных норм, услуги по химчистке ковров мебели и салона автомобиля. Мы сделаем профессиональную уборку территорий разных площадей.
+                            Компания «Дом Быта 39» оказывает полный спектр бытовых услуг как физическим, так и юридическим лицам. Сервисная компания кроме домашнего мастера, предлагает и более объемные услуги такие как, полноценный ремонт и отделка помещений, дезинфекция с целью соблюдения санитарных норм, услуги по химчистке ковров мебели и салона автомобиля. Мы сделаем профессиональную уборку территорий разных площадей.
                         </p>
                     </div>
                 </div>
@@ -161,7 +148,7 @@
                         <a href="/electrik"><img src="/img/icons/electrik-100.png" alt="Электрик" class="m-3"></a>
                     </div>
                     <div class="col d-flex justify-content-center">
-                        <a href="/remont"><img src="/img/icons/remont-100.png" alt="Ремонт и отделка" class="m-3"></a>
+                        <a href="/otdelka_i_remont"><img src="/img/icons/remont-100.png" alt="Ремонт и отделка" class="m-3"></a>
                     </div>
                     <div class="col d-flex justify-content-center">
                         <a href="/cleaning"><img src="/img/icons/cleaning-100.png" alt="Уборка" class="m-3"></a>
@@ -177,6 +164,156 @@
 
             </div>
         </section>
+
+        <section class="pb-4">
+            <div class="title_black">
+                <h2>Как вызвать мастера?</h2>
+            </div>
+            <div class="yellow_texture_bgr py-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+
+                            <p class="lead text-center">
+                                Мы предлагаем очень простую схему работы:
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card bg-transparent border-0 text-center">
+                                <img class="card-img-top" src="/img/icons/phone-300.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Звоните нам</h5>
+                                    <p class="card-text">Просто позвоните нам или закажите звонок.</p>
+
+                                    <a href="#" data-toggle="modal" data-target="#callModal" class="btn btn-dark noZensmooth" >Заказать звонок</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card bg-transparent border-0 text-center">
+                                <img class="card-img-top" src="/img/icons/detail-300.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Уточняем детали</h5>
+                                    <p class="card-text">Наш менеджер уточнит все детали и озвучит предварительную стоимость.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card bg-transparent border-0 text-center">
+                                <img class="card-img-top" src="/img/icons/car-300.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Выезд мастера</h5>
+                                    <p class="card-text">Мастер приедет в удобное для вас время и рассчитает окончательную стоимость и сроки работы.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card bg-transparent border-0 text-center">
+                                <img class="card-img-top" src="/img/icons/ok-300.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Результат</h5>
+                                    <p class="card-text">После согласования мастер приступит к работе и выполнит ваш заказ.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="black_texture_bgr pb-5 mt-5">
+            <div class="container">
+                <div class="title_white">
+                    <h2 id="emergency">Экстренный вызов мастера</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-lg-3 icon-font">
+                        <i class="fas fa-exclamation-triangle text-primary"></i>
+                        <small class="text-info">круглосуточно</small>
+                    </div>
+                    <div class="col-md-8 col-lg-9">
+                        <p class="text-info text-center lead">
+                            Если у вас произошла аварийная ситуация, прорвало трубу, засорилась канализация, сломался котел отопления, сгорела проводка или возникла любая другая проблема, требующая немедленного
+                            устранения, звоните <a class="tel-context-dark" href="tel:+74012337434">33-74-34</a> или
+                            <a class="tel-context-dark" href="tel:+79637387434">+7-963-738-7434</a> и наши специалисты
+                            немедленно приедут и устранят проблему. Также вы можете заполнить форму ниже и мы
+                            свяжемся с вами в ближайшее время.
+                        </p>
+                        <form class="outline-primary">
+                            <div class="form-row">
+                                <div class="col-md-5 mb-1">
+                                    <input type="text" class="form-control" placeholder="Ваше имя">
+                                </div>
+                                <div class="col-md-5 mb-1">
+                                    <input type="text" class="form-control" placeholder="Телефон*">
+                                </div>
+                                <div class="col-md-2 mb-1">
+                                    <button type="submit" class="btn btn-primary btn-block">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section>
+            <div class="title_black">
+                <h2>Отзывы клиентов</h2>
+            </div>
+            <div class="container">
+                <div id="carouselFeedback" class="carousel slide bg-transparent" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <blockquote class="blockquote text-center">
+                                <p class="mb-0">Переехали с женой в новую квартиру, решили заменить всю старую сантехнику на новую!
+                                    Набрали в поиске сантехник на дом и позвонили в компанию «Дом Быта 39». Ребята приехали
+                                    быстро, работа была выполнена качественно и аккуратно. Благодарим за профессионализм,
+                                    мы остались очень довольны!</p>
+                                <footer class="blockquote-footer">Сергей и Ольга. <small>21.03.2018</small></footer>
+                            </blockquote>
+                        </div>
+                        <div class="carousel-item">
+                            <blockquote class="blockquote text-center">
+                                <p class="mb-0">Я в восторге, мастер очень интеллигентный и аккуратный.
+                                    Всю работу выполнил качественно и спокойно. Дал подробную консультацию по
+                                    материалам, просил сразу обращаться при возникновении вопросов.
+                                    Я не ожидала, что такого рода профессионалы существуют. Все отлично.</p>
+                                <footer class="blockquote-footer">Виктория. <small>11.02.2018</small></footer>
+                            </blockquote>
+                        </div>
+                        <div class="carousel-item">
+                            <blockquote class="blockquote text-center">
+                                <p class="mb-0">Здравствуйте! Вызвал электрика из этой компании, т.к. была проблема
+                                    с проводкой. Прибыл мастер Александр, очень внимательно провел диагностику.
+                                    Нашел причину, по которой не было электричества в комнате и устранил проблему.</p>
+                                <footer class="blockquote-footer">Геннадий. <small>04.11.2017</small></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev noAction noZensmooth d-none d-lg-flex" href="#carouselFeedback" role="button" data-slide="prev">
+                        <i class="fas fa-chevron-left fa-2x text-primary"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next noAction noZensmooth d-none d-lg-flex" href="#carouselFeedback" role="button" data-slide="next">
+                        <i class="fas fa-chevron-right fa-2x text-primary"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="text-center">
+                    <a href="#" data-toggle="modal" data-target="#feedbackModal" class="btn btn-primary noZensmooth" >Оставить отзыв</a>
+                </div>
+            </div>
+
+        </section>
+        @include('feedback-modal')
 
         <section>
             <div class="title_black">

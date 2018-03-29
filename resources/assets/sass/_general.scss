@@ -10,6 +10,11 @@
     background-repeat:no-repeat;
     background-image:url(/img/preloader.gif);
 }
+/*.modal-open {
+    overflow: hidden !important;
+}*/
+
+
 
 
 // Buttons fix
@@ -27,7 +32,7 @@ button::-moz-focus-inner {
     .left-border {
         border-left: 1px solid white;
     }
-    .nav-item.main {
+    .nav.main {
         a {
             color: white;
             font-size: 1.2rem;
@@ -133,14 +138,15 @@ Forces image to be 100% width and not max width of 100%
 
 /*
 anchors are inline so you need ot make them block to go full width
-*/
+
 .carousel-item a {
     display: block;
     width:100%;
 }
-
+*/
 .title_white,
-.title_black {
+.title_black,
+.title_yellow {
     text-align: center;
     text-transform: uppercase;
     color: $white;
@@ -166,6 +172,14 @@ anchors are inline so you need ot make them block to go full width
 .title_black {
     color: $black;
 }
+.title_yellow {
+    color: $black;
+    h2 {
+        &:after {
+            background: $white;
+        }
+    }
+}
 
 
 footer {
@@ -183,5 +197,29 @@ footer {
 
             }
         }
+    }
+}
+
+form.outline-primary {
+    input,
+    input:focus,
+    textarea,
+    textarea:focus {
+        border-color: $primary;
+        background: none;
+        color: $primary;
+
+    }
+}
+
+form.outline-secondary {
+    input,
+    input:focus,
+    textarea,
+    textarea:focus {
+        border-color: $primary;
+        background: none;
+        color: $black;
+
     }
 }

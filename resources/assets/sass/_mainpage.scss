@@ -24,6 +24,27 @@
 .black_texture_bgr {
     background: url(/img/black-texture.jpg);
 }
+.yellow_texture_bgr {
+    background: url(/img/yellow-texture.jpg);
+}
+
+#carouselFeedback {
+    .carousel-item {
+        padding: 0 120px;
+        @media (max-width:767px) {
+            padding: 0;
+        }
+
+
+    }
+    .carousel-inner {
+        min-height: 200px;
+        @media (max-width:767px) {
+            min-height: 300px;
+        }
+    }
+}
+
 
 #map {
     height: 500px;

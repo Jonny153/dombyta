@@ -21,6 +21,10 @@
   background-image: url(/img/preloader.gif);
 }
 
+/*.modal-open {
+    overflow: hidden !important;
+}*/
+
 button:active,
 button:focus {
   outline: none !important;
@@ -40,7 +44,7 @@ button::-moz-focus-inner {
   border-left: 1px solid white;
 }
 
-#navbarHeader .nav-item.main a {
+#navbarHeader .nav.main a {
   color: white;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -167,22 +171,24 @@ Forces image to be 100% width and not max width of 100%
 
 /*
 anchors are inline so you need ot make them block to go full width
-*/
 
 .carousel-item a {
-  display: block;
-  width: 100%;
+    display: block;
+    width:100%;
 }
+*/
 
 .title_white,
-.title_black {
+.title_black,
+.title_yellow {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
 }
 
 .title_white h2,
-.title_black h2 {
+.title_black h2,
+.title_yellow h2 {
   font-size: 2rem;
   padding-top: 70px;
   padding-bottom: 50px;
@@ -190,7 +196,8 @@ anchors are inline so you need ot make them block to go full width
 }
 
 .title_white h2:after,
-.title_black h2:after {
+.title_black h2:after,
+.title_yellow h2:after {
   content: "";
   position: absolute;
   background: #fed017;
@@ -206,6 +213,14 @@ anchors are inline so you need ot make them block to go full width
   color: #000;
 }
 
+.title_yellow {
+  color: #000;
+}
+
+.title_yellow h2:after {
+  background: #fff;
+}
+
 footer .bottom-menu nav a {
   color: #fff;
   font-size: 1.2rem;
@@ -218,6 +233,24 @@ footer .bottom-menu nav a:hover,
 footer .bottom-menu nav a.active {
   color: #fed017;
   text-decoration: none;
+}
+
+form.outline-primary input,
+form.outline-primary input:focus,
+form.outline-primary textarea,
+form.outline-primary textarea:focus {
+  border-color: #fed017;
+  background: none;
+  color: #fed017;
+}
+
+form.outline-secondary input,
+form.outline-secondary input:focus,
+form.outline-secondary textarea,
+form.outline-secondary textarea:focus {
+  border-color: #fed017;
+  background: none;
+  color: #000;
 }
 
 .professional_builder {
@@ -242,6 +275,30 @@ footer .bottom-menu nav a.active {
 
 .black_texture_bgr {
   background: url(/img/black-texture.jpg);
+}
+
+.yellow_texture_bgr {
+  background: url(/img/yellow-texture.jpg);
+}
+
+#carouselFeedback .carousel-item {
+  padding: 0 120px;
+}
+
+@media (max-width: 767px) {
+  #carouselFeedback .carousel-item {
+    padding: 0;
+  }
+}
+
+#carouselFeedback .carousel-inner {
+  min-height: 200px;
+}
+
+@media (max-width: 767px) {
+  #carouselFeedback .carousel-inner {
+    min-height: 300px;
+  }
 }
 
 #map {
@@ -304,17 +361,10 @@ a.tel-context-dark:hover {
   color: white;
 }
 
-form.outline-primary input,
-form.outline-primary input:focus {
-  border-color: #fed017;
-  background: none;
-  color: #fed017;
-}
-
 #services .card-header a {
-  background: #aaaaaa;
-  background: -webkit-gradient(linear, left top, left bottom, from(#aaaaaa), color-stop(50%, #eeeeee), to(#aaaaaa));
-  background: linear-gradient(to bottom, #aaaaaa 0%, #eeeeee 50%, #aaaaaa 100%);
+  background: #fed017;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fed017), color-stop(50%, #ffe88d), to(#fed017));
+  background: linear-gradient(to bottom, #fed017 0%, #ffe88d 50%, #fed017 100%);
   display: block;
   color: black;
   height: 150px;
@@ -323,11 +373,32 @@ form.outline-primary input:focus {
   font-weight: bold;
 }
 
+@media (max-width: 991px) {
+  #services .card-header a {
+    height: 75px;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+}
+
+#services .card-header a.collapsed {
+  background: #aaaaaa;
+  background: -webkit-gradient(linear, left top, left bottom, from(#aaaaaa), color-stop(50%, #eeeeee), to(#aaaaaa));
+  background: linear-gradient(to bottom, #aaaaaa 0%, #eeeeee 50%, #aaaaaa 100%);
+}
+
 #services .card-header a:hover {
   background: #fed017;
   background: -webkit-gradient(linear, left top, left bottom, from(#fed017), color-stop(50%, #ffe88d), to(#fed017));
   background: linear-gradient(to bottom, #fed017 0%, #ffe88d 50%, #fed017 100%);
   text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  #services .card-header a img.service-icon {
+    width: 75px;
+    margin-left: 0.5rem;
+  }
 }
 
 /*!
