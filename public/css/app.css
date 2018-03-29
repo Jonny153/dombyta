@@ -305,6 +305,19 @@ form.outline-secondary textarea:focus {
   height: 500px;
 }
 
+#service a:hover {
+  text-decoration: none;
+}
+
+#service a img {
+  margin: 10px auto;
+}
+
+#service a h3 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
 .btn.btn-xl {
   padding: 1rem 1.5rem;
   font-size: 1.5rem;

@@ -140,24 +140,48 @@
                         </p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col d-flex justify-content-center">
-                        <a href="/santehnik"><img src="/img/icons/santehnik-100.png" alt="Сантехник" class="m-3"></a>
+                <div class="row" id="service">
+
+                    <div class="col-12">
+                        <div class="title_white">
+                            <h2>Наши услуги</h2>
+                        </div>
                     </div>
                     <div class="col d-flex justify-content-center">
-                        <a href="/electrik"><img src="/img/icons/electrik-100.png" alt="Электрик" class="m-3"></a>
+                        <a href="/santehnik">
+                            <img src="/img/icons/santehnik-100.png" alt="Сантехник" class="m-3">
+                            <h3 class="text-info text-uppercase">Сантехник</h3>
+                        </a>
                     </div>
                     <div class="col d-flex justify-content-center">
-                        <a href="/otdelka_i_remont"><img src="/img/icons/remont-100.png" alt="Ремонт и отделка" class="m-3"></a>
+                        <a href="/electrik">
+                            <img src="/img/icons/electrik-100.png" alt="Электрик" class="m-3">
+                            <h3 class="text-info text-uppercase">Электрик</h3>
+                        </a>
                     </div>
                     <div class="col d-flex justify-content-center">
-                        <a href="/cleaning"><img src="/img/icons/cleaning-100.png" alt="Уборка" class="m-3"></a>
+                        <a href="/otdelka_i_remont">
+                            <img src="/img/icons/remont-100.png" alt="Ремонт и отделка" class="m-3">
+                            <h3 class="text-info text-uppercase">Ремонт</h3>
+                        </a>
                     </div>
                     <div class="col d-flex justify-content-center">
-                        <a href="/himchistka"><img src="/img/icons/himchistka-100.png" alt="Химчистка" class="m-3"></a>
+                        <a href="/cleaning">
+                            <img src="/img/icons/cleaning-100.png" alt="Уборка" class="m-3">
+                            <h3 class="text-info text-uppercase">Уборка</h3>
+                        </a>
                     </div>
                     <div class="col d-flex justify-content-center">
-                        <a href="/dezinsekt"><img src="/img/icons/dezinsekt-100.png" alt="Дезинсекция" class="m-3"></a>
+                        <a href="/himchistka">
+                            <img src="/img/icons/himchistka-100.png" alt="Химчистка" class="m-3">
+                            <h3 class="text-info text-uppercase">Химчистка</h3>
+                        </a>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <a href="/dezinsekt">
+                            <img src="/img/icons/dezinsekt-100.png" alt="Дезинсекция" class="m-3">
+                            <h3 class="text-info text-uppercase">Дезинсекция</h3>
+                        </a>
                     </div>
 
                 </div>
@@ -266,7 +290,7 @@
 
         <section>
             <div class="title_black">
-                <h2>Отзывы клиентов</h2>
+                <h2 id="feedback">Отзывы клиентов</h2>
             </div>
             <div class="container">
                 <div id="carouselFeedback" class="carousel slide bg-transparent" data-ride="carousel">
@@ -317,7 +341,7 @@
 
         <section>
             <div class="title_black">
-                <h2>Наши контакты</h2>
+                <h2 id="contacts">Наши контакты</h2>
             </div>
             <div id="map">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af4884826fd86250605ef67a309c7c7569eae56e9c8a3341fb02408ea95f1b9f3&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>

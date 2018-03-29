@@ -70,12 +70,12 @@
                                 <nav class="nav flex-column text-center">
                                     <a class="nav-link" href="/">Главная</a>
                                     <a class="nav-link" href="#about">О нас</a>
-                                    <a class="nav-link" href="/#services">Услуги</a>
+                                    <a class="nav-link" href="#service">Услуги</a>
                                     <a class="nav-link" href="#emergency">
                                        <i class="fas fa-lg fa-exclamation-triangle"></i> Аварийный вызов
                                     </a>
-                                    <a class="nav-link" href="/#feedback">Отзывы</a>
-                                    <a class="nav-link" href="/#contacts">Контакты</a>
+                                    <a class="nav-link" href="#feedback">Отзывы</a>
+                                    <a class="nav-link" href="#contacts">Контакты</a>
                                 </nav>
                             </div>
 
@@ -118,7 +118,7 @@
                                 <nav class="nav flex-column text-center">
                                     <a class="nav-link" href="@if ($page != 'main')/@else#@endif">Главная</a>
                                     <a class="nav-link" href="@if ($page != 'main')/@endif#about">О нас</a>
-                                    <a class="nav-link" href="@if ($page != 'main')/@endif#services">Услуги</a>
+                                    <a class="nav-link" href="@if ($page != 'main')/@endif#service">Услуги</a>
                                     <a class="nav-link" href="@if ($page != 'main')/@endif#emergency">Аварийный вызов</a>
                                     <a class="nav-link" href="@if ($page != 'main')/@endif#feedback">Отзывы</a>
                                     <a class="nav-link" href="@if ($page != 'main')/@endif#contacts">Контакты</a>
