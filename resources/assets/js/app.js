@@ -6,29 +6,17 @@
  */
 
 require('./bootstrap');
-require('jquery-touchswipe');
+//require('jquery-touchswipe');
+require('jquery-touch-events');
 
 require('owl.carousel');
 /*window.zenscroll = require('zenscroll');
 zenscroll.setup(1000, 20);*/
 
-window.Vue = require('vue');
 window.WOW = require('wow.js');
 
 
 
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
-
-const app = new Vue({
-   // el: '#app'
-});
 
 
 
@@ -49,6 +37,23 @@ let wow = new WOW(
     }
 );
 wow.init();
+
+
+// swipe карусели
+
+$('#carousel, #carouselFeedback').on('swipe', function(e, touch) {
+    console.log(e.target, touch);
+    let $carousel = $(e.target),
+        direction = touch.direction;
+    if (direction === 'left') {
+        $carousel.carousel('next');
+    }
+    if (direction === 'right') {
+        $carousel.carousel('prev');
+    }
+});
+
+/*
 
 $(function() {
     let $carusel = $("#carousel");
@@ -85,38 +90,38 @@ $(function() {
 
 });
 
-$('.noaction').on('click', function (e) {
-    e.preventDefault();
-});
+*/
 
 
 
-(function($) {
-   // "use strict";
 
 
 
-    //* Hide Loading Box (Preloader)
-    function preloader(){
-        if ( $('.preloader').length ){
-            $(window).on('load', function() {
-                $('.preloader').delay(500).fadeOut('slow');
-                $('body').delay(500).css({'overflow':'visible'});
-            });
-        }
-    };
 
-    /*Function Calls*/
 
-    preloader ();
 
-})(jQuery);
+let preloader = function(){
+    if ( $('.preloader').length ){
+        $(window).on('load', function() {
+            $('.preloader').delay(500).fadeOut('slow');
+            //$('body').delay(500).css({'overflow':'visible'});
+        });
+    }
+};
 
+preloader();
+
+
+
+
+
+
+// прячем меню при клике вне его
 
 let $topmenu = $("#navbarHeader");
-// прячем меню при клике вне его
-$(document).mouseup(function(e) {
-   //let div = $("#navbarHeader");
+$(document).on('touchend mouseup', function(e) {
+   console.log(e);
+    //let div = $("#navbarHeader");
     let link = $('a.nav-link');
     if ((!$topmenu.is(e.target) && $topmenu.has(e.target).length === 0) || link.is(e.target)) {
         $topmenu.collapse('hide');
@@ -124,17 +129,11 @@ $(document).mouseup(function(e) {
 });
 // прячем меню по свайпу вверх
 
-$topmenu.swipe({
+/*$topmenu.on('swipeup', function(){
+    $topmenu.collapse('hide');
+});*/
 
-    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-        // console.log("You swiped " + direction );
 
-        if(direction === 'up') {
-            $topmenu.collapse('hide');
-        }
-
-    }
-});
 
 window.SmoothScroll = require('smooth-scroll');
 

@@ -45,7 +45,7 @@
                             <a class="tel mr-5" href="tel:+79637387434">+7-963-738-7434</a>
                         </div>
 
-                        <a href="#" data-toggle="modal" data-target="#callModal" class="btn btn-primary mr-5 d-none d-lg-block noZensmooth">Заказать звонок</a>
+                        <a href="#" data-noscroll data-toggle="modal" data-target="#callModal" class="btn btn-primary mr-5 d-none d-lg-block">Заказать звонок</a>
 
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>

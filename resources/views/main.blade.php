@@ -211,7 +211,7 @@
                                     <h5 class="card-title">Звоните нам</h5>
                                     <p class="card-text">Просто позвоните нам или закажите звонок.</p>
 
-                                    <a href="#" data-toggle="modal" data-target="#callModal" class="btn btn-dark noZensmooth" >Заказать звонок</a>
+                                    <a href="#" data-noscroll data-toggle="modal" data-target="#callModal" class="btn btn-dark noZensmooth" >Заказать звонок</a>
                                 </div>
                             </div>
                         </div>
@@ -256,9 +256,11 @@
                     <h2 id="emergency">Экстренный вызов мастера</h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 col-lg-3 icon-font" data-toggle="modal" data-target="#callModal">
-                        <i class="fas fa-exclamation-triangle text-primary"></i>
-                        <small class="text-info">круглосуточно</small>
+                    <div class="col-md-4 col-lg-3 icon-font" >
+                        <span data-toggle="modal" data-target="#callModal">
+                            <i class="fas fa-exclamation-triangle text-primary"></i>
+                            <small class="text-info">круглосуточно</small>
+                        </span>
                     </div>
                     <div class="col-md-8 col-lg-9">
                         <p class="text-info text-center lead">
