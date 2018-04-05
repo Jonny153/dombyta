@@ -153,8 +153,9 @@ window.scroller = new SmoothScroll(
     scrollerOptions
     );
 
-
-$('#services').on('shown.bs.collapse', '.collapse', function (e) {
+let menuHeight = $('.navbar').outerHeight();
+$('#services').on('shown.bs.collapse', '.collapse', menuHeight, function (e) {
+    console.log(menuHeight);
     let anchor = document.querySelector($(e.target).data('backlink'));
-    scroller.animateScroll(anchor,anchor, { offset:60 });
+    scroller.animateScroll(anchor, anchor, { speed: 300, offset:menuHeight });
 });
