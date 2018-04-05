@@ -40776,8 +40776,8 @@ preloader();
 
 var $topmenu = $("#navbarHeader");
 $(document).on('mouseup', function (e) {
-    console.log(e);
-    //let div = $("#navbarHeader");
+    // console.log(e);
+
     var link = $('a.nav-link');
     if (!$topmenu.is(e.target) && $topmenu.has(e.target).length === 0 || link.is(e.target)) {
         $topmenu.collapse('hide');
@@ -40791,36 +40791,20 @@ $(document).on('scrollstart', function () {
 
 window.SmoothScroll = __webpack_require__("./node_modules/smooth-scroll/dist/js/smooth-scroll.min.js");
 
-window.scroller = new SmoothScroll('a[href*="#"]', {
-    // Selectors
-    ignore: '[data-noscroll]', // Selector for links to ignore (must be a valid CSS selector)
-    header: null, // Selector for fixed headers (must be a valid CSS selector)
-
-    // Speed & Easing
+var scrollerOptions = {
+    ignore: '[data-noscroll]',
     speed: 800, // Integer. How fast to complete the scroll in milliseconds
-    offset: 20, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+    offset: 30, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
     easing: 'easeInOutCubic', // Easing pattern to use
-    /*customEasing: function (time) {
-         // Function. Custom easing pattern
-        // If this is set to anything other than null, will override the easing option above
-         // return <your formulate with time as a multiplier>
-         // Example: easeInOut Quad
-        return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
-     },*/
 
-    // Callback API
     before: function before(anchor, toggle) {}, // Callback to run before scroll
-    after: function after(anchor, toggle) {} // Callback to run after scroll
-});
+    after: function after(anchor, toggle) {}
+};
+window.scroller = new SmoothScroll('a[href*="#"]', scrollerOptions);
 
 $('#services').on('shown.bs.collapse', '.collapse', function (e) {
-    console.log($(this));
-    //let anchor = $(e.target).attr('aria-labelledby');
-    //if (anchor !== undefined) {
-    var height = $('#heading1').scrollTop();
-    console.log(height);
-    scroller.animateScroll($('#heading1'));
-    //}
+    var anchor = document.querySelector($(e.target).data('backlink'));
+    scroller.animateScroll(anchor, anchor, { offset: 60 });
 });
 
 /***/ }),

@@ -32,7 +32,7 @@
             </div>
         </section>
 
-        <section class="black_texture_bgr pb-5">
+        <section class="black_texture_bgr pb-5" id="toggle">
             <div class="container">
                 <div class="title_white">
                     <h2>Экстренный вызов сантехника</h2>
@@ -83,7 +83,7 @@
                             </a>
                         </div>
 
-                        <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#services">
+                        <div id="collapse1" class="collapse" data-backlink="#heading1" aria-labelledby="heading1" data-parent="#services">
                             <div class="card-body">
                                 <p class="lead">Компания «Дом Быта 39» оказывает все виды услуг по установке и замене сантехники в Калининграде и Калининградской области</p>
                                 <div class="row">
@@ -201,12 +201,12 @@
                     </div>
                     <div class="card">
                         <div class="card-header p-0" id="heading2">
-                            <a class="collapsed" href="#heading2" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse1">
+                            <a class="collapsed" href="#" data-noscroll data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse1">
                                 <img class="img-fluid service-icon" src="/img/icons/water-icon-150.png"> Водоснабжение
                             </a>
                         </div>
 
-                        <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#services">
+                        <div id="collapse2" class="collapse"  data-backlink="#heading2" aria-labelledby="heading2" data-parent="#services">
                             <div class="card-body">
                                 <p class="lead">Монтаж систем водоснабжения связан с решением целого ряда технических
                                     задач: непрерывная подача воды, стабильное давление в трубопроводе.
@@ -237,12 +237,12 @@
                     </div>
                     <div class="card">
                         <div class="card-header p-0" id="heading3">
-                            <a class="noZensmooth collapsed" href="#" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse1">
+                            <a class="collapsed" href="#" data-noscroll data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse1">
                                 <img class="img-fluid service-icon" src="/img/icons/heat-icon-150.png"> Отопление
                             </a>
                         </div>
 
-                        <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#services">
+                        <div id="collapse3" class="collapse" data-backlink="#heading3" aria-labelledby="heading3" data-parent="#services">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                             </div>
@@ -250,12 +250,12 @@
                     </div>
                     <div class="card">
                         <div class="card-header p-0" id="heading4">
-                            <a class="noZensmooth collapsed" href="#" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse1">
+                            <a class="collapsed" href="#" data-noscroll data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse1">
                                 <img class="img-fluid service-icon" src="/img/icons/sewer-icon-150.png"> Канализация
                             </a>
                         </div>
 
-                        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#services">
+                        <div id="collapse4" class="collapse" data-backlink="#heading4" aria-labelledby="heading4" data-parent="#services">
                             <div class="card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                             </div>

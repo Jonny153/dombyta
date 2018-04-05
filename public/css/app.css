@@ -50,7 +50,7 @@ button::-moz-focus-inner {
 #navbarHeader {
   border-bottom: 1px solid #fed017;
   margin-bottom: -8px;
-  background: url(/img/logo-v200dg.png) right bottom no-repeat;
+  background: url(/img/logo-v100dg.png) right top no-repeat;
 }
 
 #navbarHeader .left-border {
