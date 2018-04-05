@@ -25,6 +25,19 @@
     overflow: hidden !important;
 }*/
 
+a.simple-link {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+a.simple-link:hover,
+a.simple-link:active,
+a.simple-link:focus {
+  text-decoration: none;
+  outline: none;
+}
+
 button:active,
 button:focus {
   outline: none !important;

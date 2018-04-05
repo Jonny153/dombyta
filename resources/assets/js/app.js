@@ -119,7 +119,7 @@ preloader();
 // прячем меню при клике вне его
 
 let $topmenu = $("#navbarHeader");
-$(document).on('touchend mouseup', function(e) {
+$(document).on('mouseup', function(e) {
    console.log(e);
     //let div = $("#navbarHeader");
     let link = $('a.nav-link');
@@ -129,9 +129,9 @@ $(document).on('touchend mouseup', function(e) {
 });
 // прячем меню по свайпу вверх
 
-/*$topmenu.on('swipeup', function(){
+$topmenu.on('swipeup', function(){
     $topmenu.collapse('hide');
-});*/
+});
 
 
 

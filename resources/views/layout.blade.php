@@ -68,15 +68,14 @@
                             </div>
                             <div class="col-xs-12 col-sm-6 col-lg-3 py-2">
                                 <nav class="nav flex-sm-column justify-content-around text-center">
-                                    <a class="nav-link text-uppercase" href="#emergency">
+                                    <a class="nav-link text-uppercase" href="/#emergency">
                                         <i class="fas fa-lg fa-exclamation-triangle"></i> Аварийный вызов
                                     </a>
                                     <a class="nav-link" href="/">Главная</a>
-                                    <a class="nav-link" href="#about">О нас</a>
-                                    <a class="nav-link" href="#service">Услуги</a>
-
-                                    <a class="nav-link" href="#feedback">Отзывы</a>
-                                    <a class="nav-link" href="#contacts">Контакты</a>
+                                    <a class="nav-link" href="/#about">О нас</a>
+                                    <a class="nav-link" href="/#service">Услуги</a>
+                                    <a class="nav-link" href="/#feedback">Отзывы</a>
+                                    <a class="nav-link" href="/#contacts">Контакты</a>
                                 </nav>
                             </div>
 

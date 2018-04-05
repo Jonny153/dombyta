@@ -15,7 +15,18 @@
 }*/
 
 
+a.simple-link {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
 
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        outline: none;
+    }
+}
 
 // Buttons fix
 button:active, button:focus {

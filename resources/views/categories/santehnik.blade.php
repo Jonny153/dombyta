@@ -38,9 +38,11 @@
                     <h2>Экстренный вызов сантехника</h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 col-lg-3 icon-font" data-toggle="modal" data-target="#callModal">
-                        <i class="fas fa-exclamation-triangle text-primary"></i>
-                        <small class="text-info">круглосуточно</small>
+                    <div class="col-md-4 col-lg-3 icon-font">
+                        <a href="#" class="simple-link" data-noscroll data-toggle="modal" data-target="#callModal">
+                            <i class="fas fa-exclamation-triangle text-primary"></i>
+                            <small class="text-info">круглосуточно</small>
+                        </a>
                     </div>
                     <div class="col-md-8 col-lg-9">
                         <p class="text-info text-center lead">

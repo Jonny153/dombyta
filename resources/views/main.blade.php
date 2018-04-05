@@ -257,10 +257,10 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4 col-lg-3 icon-font" >
-                        <span data-toggle="modal" data-target="#callModal">
+                        <a href="#" class="simple-link" data-noscroll data-toggle="modal" data-target="#callModal">
                             <i class="fas fa-exclamation-triangle text-primary"></i>
                             <small class="text-info">круглосуточно</small>
-                        </span>
+                        </a>
                     </div>
                     <div class="col-md-8 col-lg-9">
                         <p class="text-info text-center lead">
@@ -334,7 +334,7 @@
                     </a>
                 </div>
                 <div class="text-center">
-                    <a href="#" data-toggle="modal" data-target="#feedbackModal" class="btn btn-primary noZensmooth" >Оставить отзыв</a>
+                    <a href="#" data-noscroll data-toggle="modal" data-target="#feedbackModal" class="btn btn-primary" >Оставить отзыв</a>
                 </div>
             </div>
 

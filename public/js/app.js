@@ -40775,7 +40775,7 @@ preloader();
 // прячем меню при клике вне его
 
 var $topmenu = $("#navbarHeader");
-$(document).on('touchend mouseup', function (e) {
+$(document).on('mouseup', function (e) {
     console.log(e);
     //let div = $("#navbarHeader");
     var link = $('a.nav-link');
@@ -40785,9 +40785,9 @@ $(document).on('touchend mouseup', function (e) {
 });
 // прячем меню по свайпу вверх
 
-/*$topmenu.on('swipeup', function(){
+$topmenu.on('swipeup', function () {
     $topmenu.collapse('hide');
-});*/
+});
 
 window.SmoothScroll = __webpack_require__("./node_modules/smooth-scroll/dist/js/smooth-scroll.min.js");
 
