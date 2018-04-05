@@ -127,9 +127,9 @@ $(document).on('mouseup', function(e) {
         $topmenu.collapse('hide');
     }
 });
-// прячем меню по свайпу вверх
+// прячем меню по скроллу
 
-$topmenu.on('swipeup', function(){
+$(document).on('scrollstart', function(){
     $topmenu.collapse('hide');
 });
 
