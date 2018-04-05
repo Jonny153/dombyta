@@ -59,21 +59,22 @@
                             <div class="col-xs-12 col-sm-6 col-lg-3 py-2 order-sm-2">
                                 <nav class="nav main flex-column text-center">
                                     <a class="nav-link" href="/santehnik">Сантехник</a>
-                                    <a class="nav-link" href="#">Электрик</a>
-                                    <a class="nav-link" href="#">Отделка</a>
-                                    <a class="nav-link" href="#">Уборка</a>
-                                    <a class="nav-link" href="#">Химчистка</a>
-                                    <a class="nav-link" href="#">Дезинсекция</a>
+                                    <a class="nav-link" href="/electrik">Электрик</a>
+                                    <a class="nav-link" href="/otdelka_i_remont">Отделка</a>
+                                    <a class="nav-link" href="/cleaning">Уборка</a>
+                                    <a class="nav-link" href="/himchistka">Химчистка</a>
+                                    <a class="nav-link" href="/dezinsekt">Дезинсекция</a>
                                 </nav>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-lg-3 py-2">
-                                <nav class="nav flex-column text-center">
+                                <nav class="nav flex-sm-column justify-content-around text-center">
+                                    <a class="nav-link text-uppercase" href="#emergency">
+                                        <i class="fas fa-lg fa-exclamation-triangle"></i> Аварийный вызов
+                                    </a>
                                     <a class="nav-link" href="/">Главная</a>
                                     <a class="nav-link" href="#about">О нас</a>
                                     <a class="nav-link" href="#service">Услуги</a>
-                                    <a class="nav-link" href="#emergency">
-                                       <i class="fas fa-lg fa-exclamation-triangle"></i> Аварийный вызов
-                                    </a>
+
                                     <a class="nav-link" href="#feedback">Отзывы</a>
                                     <a class="nav-link" href="#contacts">Контакты</a>
                                 </nav>
@@ -104,28 +105,28 @@
                 <section class="bottom-menu bg-dark py-4">
                     <div class="container">
                         <div class="row">
-                            <div class="col">
+                            <div class="col-6 col-md-4">
                                 <nav class="nav flex-column text-uppercase text-center">
                                     <a class="nav-link" href="/santehnik">Сантехник</a>
                                     <a class="nav-link" href="/electrik">Электрик</a>
-                                    <a class="nav-link" href="/">Отделка и ремонт</a>
-                                    <a class="nav-link" href="#">Уборка</a>
-                                    <a class="nav-link" href="#">Химчистка</a>
-                                    <a class="nav-link" href="#">Дезинсекция</a>
+                                    <a class="nav-link" href="/otdelka_i_remont">Отделка и ремонт</a>
+                                    <a class="nav-link" href="/cleaning">Уборка</a>
+                                    <a class="nav-link" href="/himchistka">Химчистка</a>
+                                    <a class="nav-link" href="/dezinsekt">Дезинсекция</a>
                                 </nav>
                             </div>
-                            <div class="col">
+                            <div class="col-6 col-md-4">
                                 <nav class="nav flex-column text-center">
                                     <a class="nav-link" href="@if ($page != 'main')/@else#@endif">Главная</a>
-                                    <a class="nav-link" href="@if ($page != 'main')/@endif#about">О нас</a>
-                                    <a class="nav-link" href="@if ($page != 'main')/@endif#service">Услуги</a>
-                                    <a class="nav-link" href="@if ($page != 'main')/@endif#emergency">Аварийный вызов</a>
-                                    <a class="nav-link" href="@if ($page != 'main')/@endif#feedback">Отзывы</a>
-                                    <a class="nav-link" href="@if ($page != 'main')/@endif#contacts">Контакты</a>
+                                    <a class="nav-link" href="/#about">О нас</a>
+                                    <a class="nav-link" href="/#service">Услуги</a>
+                                    <a class="nav-link" href="/#emergency">Аварийный вызов</a>
+                                    <a class="nav-link" href="/#feedback">Отзывы</a>
+                                    <a class="nav-link" href="/#contacts">Контакты</a>
                                 </nav>
                             </div>
 
-                            <div class="col d-flex">
+                            <div class="col-12 col-md-4 d-flex">
 
                                 <div class="align-self-end w-100">
                                     <img src="/img/logo-v200y.png" class="bottom-logo img-fluid d-block mx-auto" alt="logo">

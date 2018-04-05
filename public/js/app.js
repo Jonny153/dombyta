@@ -39347,6 +39347,16 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
+/***/ "./node_modules/smooth-scroll/dist/js/smooth-scroll.min.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! smooth-scroll v12.1.5 | (c) 2017 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/smooth-scroll */
+!(function(e,t){ true?!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function(){return t(e)}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):"object"==typeof exports?module.exports=t(e):e.SmoothScroll=t(e)})("undefined"!=typeof global?global:"undefined"!=typeof window?window:this,(function(e){"use strict";var t="querySelector"in document&&"addEventListener"in e&&"requestAnimationFrame"in e&&"closest"in e.Element.prototype,n={ignore:"[data-scroll-ignore]",header:null,speed:500,offset:0,easing:"easeInOutCubic",customEasing:null,before:function(){},after:function(){}},o=function(){for(var e={},t=0,n=arguments.length;t<n;t++){var o=arguments[t];!(function(t){for(var n in t)t.hasOwnProperty(n)&&(e[n]=t[n])})(o)}return e},a=function(t){return parseInt(e.getComputedStyle(t).height,10)},r=function(e){"#"===e.charAt(0)&&(e=e.substr(1));for(var t,n=String(e),o=n.length,a=-1,r="",i=n.charCodeAt(0);++a<o;){if(0===(t=n.charCodeAt(a)))throw new InvalidCharacterError("Invalid character: the input contains U+0000.");t>=1&&t<=31||127==t||0===a&&t>=48&&t<=57||1===a&&t>=48&&t<=57&&45===i?r+="\\"+t.toString(16)+" ":r+=t>=128||45===t||95===t||t>=48&&t<=57||t>=65&&t<=90||t>=97&&t<=122?n.charAt(a):"\\"+n.charAt(a)}return"#"+r},i=function(e,t){var n;return"easeInQuad"===e.easing&&(n=t*t),"easeOutQuad"===e.easing&&(n=t*(2-t)),"easeInOutQuad"===e.easing&&(n=t<.5?2*t*t:(4-2*t)*t-1),"easeInCubic"===e.easing&&(n=t*t*t),"easeOutCubic"===e.easing&&(n=--t*t*t+1),"easeInOutCubic"===e.easing&&(n=t<.5?4*t*t*t:(t-1)*(2*t-2)*(2*t-2)+1),"easeInQuart"===e.easing&&(n=t*t*t*t),"easeOutQuart"===e.easing&&(n=1- --t*t*t*t),"easeInOutQuart"===e.easing&&(n=t<.5?8*t*t*t*t:1-8*--t*t*t*t),"easeInQuint"===e.easing&&(n=t*t*t*t*t),"easeOutQuint"===e.easing&&(n=1+--t*t*t*t*t),"easeInOutQuint"===e.easing&&(n=t<.5?16*t*t*t*t*t:1+16*--t*t*t*t*t),e.customEasing&&(n=e.customEasing(t)),n||t},u=function(){return Math.max(document.body.scrollHeight,document.documentElement.scrollHeight,document.body.offsetHeight,document.documentElement.offsetHeight,document.body.clientHeight,document.documentElement.clientHeight)},c=function(e,t,n){var o=0;if(e.offsetParent)do{o+=e.offsetTop,e=e.offsetParent}while(e);return o=Math.max(o-t-n,0)},s=function(e){return e?a(e)+e.offsetTop:0},l=function(t,n,o){o||(t.focus(),document.activeElement.id!==t.id&&(t.setAttribute("tabindex","-1"),t.focus(),t.style.outline="none"),e.scrollTo(0,n))},f=function(t){return!!("matchMedia"in e&&e.matchMedia("(prefers-reduced-motion)").matches)};return function(a,d){var m,h,g,p,v,b,y,S={};S.cancelScroll=function(){cancelAnimationFrame(y)},S.animateScroll=function(t,a,r){var f=o(m||n,r||{}),d="[object Number]"===Object.prototype.toString.call(t),h=d||!t.tagName?null:t;if(d||h){var g=e.pageYOffset;f.header&&!p&&(p=document.querySelector(f.header)),v||(v=s(p));var b,y,E,I=d?t:c(h,v,parseInt("function"==typeof f.offset?f.offset():f.offset,10)),O=I-g,A=u(),C=0,w=function(n,o){var r=e.pageYOffset;if(n==o||r==o||(g<o&&e.innerHeight+r)>=A)return S.cancelScroll(),l(t,o,d),f.after(t,a),b=null,!0},Q=function(t){b||(b=t),C+=t-b,y=C/parseInt(f.speed,10),y=y>1?1:y,E=g+O*i(f,y),e.scrollTo(0,Math.floor(E)),w(E,I)||(e.requestAnimationFrame(Q),b=t)};0===e.pageYOffset&&e.scrollTo(0,0),f.before(t,a),S.cancelScroll(),e.requestAnimationFrame(Q)}};var E=function(e){h&&(h.id=h.getAttribute("data-scroll-id"),S.animateScroll(h,g),h=null,g=null)},I=function(t){if(!f()&&0===t.button&&!t.metaKey&&!t.ctrlKey&&(g=t.target.closest(a))&&"a"===g.tagName.toLowerCase()&&!t.target.closest(m.ignore)&&g.hostname===e.location.hostname&&g.pathname===e.location.pathname&&/#/.test(g.href)){var n;try{n=r(decodeURIComponent(g.hash))}catch(e){n=r(g.hash)}if("#"===n){t.preventDefault(),h=document.body;var o=h.id?h.id:"smooth-scroll-top";return h.setAttribute("data-scroll-id",o),h.id="",void(e.location.hash.substring(1)===o?E():e.location.hash=o)}h=document.querySelector(n),h&&(h.setAttribute("data-scroll-id",h.id),h.id="",g.hash===e.location.hash&&(t.preventDefault(),E()))}},O=function(e){b||(b=setTimeout((function(){b=null,v=s(p)}),66))};return S.destroy=function(){m&&(document.removeEventListener("click",I,!1),e.removeEventListener("resize",O,!1),S.cancelScroll(),m=null,h=null,g=null,p=null,v=null,b=null,y=null)},S.init=function(a){t&&(S.destroy(),m=o(n,a||{}),p=m.header?document.querySelector(m.header):null,v=s(p),document.addEventListener("click",I,!1),e.addEventListener("hashchange",E,!1),p&&e.addEventListener("resize",O,!1))},S.init(d),S}}));
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
 /***/ "./node_modules/timers-browserify/main.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -50997,373 +51007,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 /***/ }),
 
-/***/ "./node_modules/zenscroll/zenscroll.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
- * Zenscroll 4.0.2
- * https://github.com/zengabor/zenscroll/
- *
- * Copyright 2015–2018 Gabor Lenard
- *
- * This is free and unencumbered software released into the public domain.
- * 
- * Anyone is free to copy, modify, publish, use, compile, sell, or
- * distribute this software, either in source code form or as a compiled
- * binary, for any purpose, commercial or non-commercial, and by any
- * means.
- * 
- * In jurisdictions that recognize copyright laws, the author or authors
- * of this software dedicate any and all copyright interest in the
- * software to the public domain. We make this dedication for the benefit
- * of the public at large and to the detriment of our heirs and
- * successors. We intend this dedication to be an overt act of
- * relinquishment in perpetuity of all present and future rights to this
- * software under copyright law.
- * 
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
- * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
- * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
- * IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
- * OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
- * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
- * OTHER DEALINGS IN THE SOFTWARE.
- * 
- * For more information, please refer to <http://unlicense.org>
- * 
- */
-
-/*jshint devel:true, asi:true */
-
-/*global define, module */
-
-
-(function (root, factory) {
-	if (true) {
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory()),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))
-	} else if (typeof module === "object" && module.exports) {
-		module.exports = factory()
-	} else {
-		(function install() {
-			// To make sure Zenscroll can be referenced from the header, before `body` is available
-			if (document && document.body) {
-				root.zenscroll = factory()
-			} else {
-				// retry 9ms later
-				setTimeout(install, 9)
-			}
-		})()
-	}
-}(this, function () {
-	"use strict"
-
-
-	// Detect if the browser already supports native smooth scrolling (e.g., Firefox 36+ and Chrome 49+) and it is enabled:
-	var isNativeSmoothScrollEnabledOn = function (elem) {
-		return elem && "getComputedStyle" in window &&
-			window.getComputedStyle(elem)["scroll-behavior"] === "smooth"
-	}
-
-
-	// Exit if it’s not a browser environment:
-	if (typeof window === "undefined" || !("document" in window)) {
-		return {}
-	}
-
-
-	var makeScroller = function (container, defaultDuration, edgeOffset) {
-
-		// Use defaults if not provided
-		defaultDuration = defaultDuration || 999 //ms
-		if (!edgeOffset && edgeOffset !== 0) {
-			// When scrolling, this amount of distance is kept from the edges of the container:
-			edgeOffset = 9 //px
-		}
-
-		// Handling the life-cycle of the scroller
-		var scrollTimeoutId
-		var setScrollTimeoutId = function (newValue) {
-			scrollTimeoutId = newValue
-		}
-
-		/**
-		 * Stop the current smooth scroll operation immediately
-		 */
-		var stopScroll = function () {
-			clearTimeout(scrollTimeoutId)
-			setScrollTimeoutId(0)
-		}
-
-		var getTopWithEdgeOffset = function (elem) {
-			return Math.max(0, container.getTopOf(elem) - edgeOffset)
-		}
-
-		/**
-		 * Scrolls to a specific vertical position in the document.
-		 *
-		 * @param {targetY} The vertical position within the document.
-		 * @param {duration} Optionally the duration of the scroll operation.
-		 *        If not provided the default duration is used.
-		 * @param {onDone} An optional callback function to be invoked once the scroll finished.
-		 */
-		var scrollToY = function (targetY, duration, onDone) {
-			stopScroll()
-			if (duration === 0 || (duration && duration < 0) || isNativeSmoothScrollEnabledOn(container.body)) {
-				container.toY(targetY)
-				if (onDone) {
-					onDone()
-				}
-			} else {
-				var startY = container.getY()
-				var distance = Math.max(0, targetY) - startY
-				var startTime = new Date().getTime()
-				duration = duration || Math.min(Math.abs(distance), defaultDuration);
-				(function loopScroll() {
-					setScrollTimeoutId(setTimeout(function () {
-						// Calculate percentage:
-						var p = Math.min(1, (new Date().getTime() - startTime) / duration)
-						// Calculate the absolute vertical position:
-						var y = Math.max(0, Math.floor(startY + distance*(p < 0.5 ? 2*p*p : p*(4 - p*2)-1)))
-						container.toY(y)
-						if (p < 1 && (container.getHeight() + y) < container.body.scrollHeight) {
-							loopScroll()
-						} else {
-							setTimeout(stopScroll, 99) // with cooldown time
-							if (onDone) {
-								onDone()
-							}
-						}
-					}, 9))
-				})()
-			}
-		}
-
-		/**
-		 * Scrolls to the top of a specific element.
-		 *
-		 * @param {elem} The element to scroll to.
-		 * @param {duration} Optionally the duration of the scroll operation.
-		 * @param {onDone} An optional callback function to be invoked once the scroll finished.
-		 */
-		var scrollToElem = function (elem, duration, onDone) {
-			scrollToY(getTopWithEdgeOffset(elem), duration, onDone)
-		}
-
-		/**
-		 * Scrolls an element into view if necessary.
-		 *
-		 * @param {elem} The element.
-		 * @param {duration} Optionally the duration of the scroll operation.
-		 * @param {onDone} An optional callback function to be invoked once the scroll finished.
-		 */
-		var scrollIntoView = function (elem, duration, onDone) {
-			var elemHeight = elem.getBoundingClientRect().height
-			var elemBottom = container.getTopOf(elem) + elemHeight
-			var containerHeight = container.getHeight()
-			var y = container.getY()
-			var containerBottom = y + containerHeight
-			if (getTopWithEdgeOffset(elem) < y || (elemHeight + edgeOffset) > containerHeight) {
-				// Element is clipped at top or is higher than screen.
-				scrollToElem(elem, duration, onDone)
-			} else if ((elemBottom + edgeOffset) > containerBottom) {
-				// Element is clipped at the bottom.
-				scrollToY(elemBottom - containerHeight + edgeOffset, duration, onDone)
-			} else if (onDone) {
-				onDone()
-			}
-		}
-
-		/**
-		 * Scrolls to the center of an element.
-		 *
-		 * @param {elem} The element.
-		 * @param {duration} Optionally the duration of the scroll operation.
-		 * @param {offset} Optionally the offset of the top of the element from the center of the screen.
-		 *        A value of 0 is ignored.
-		 * @param {onDone} An optional callback function to be invoked once the scroll finished.
-		 */
-		var scrollToCenterOf = function (elem, duration, offset, onDone) {
-			scrollToY(Math.max(0, container.getTopOf(elem) - container.getHeight()/2 + (offset || elem.getBoundingClientRect().height/2)), duration, onDone)
-		}
-
-		/**
-		 * Changes default settings for this scroller.
-		 *
-		 * @param {newDefaultDuration} Optionally a new value for default duration, used for each scroll method by default.
-		 *        Ignored if null or undefined.
-		 * @param {newEdgeOffset} Optionally a new value for the edge offset, used by each scroll method by default. Ignored if null or undefined.
-		 * @returns An object with the current values.
-		 */
-		var setup = function (newDefaultDuration, newEdgeOffset) {
-			if (newDefaultDuration === 0 || newDefaultDuration) {
-				defaultDuration = newDefaultDuration
-			}
-			if (newEdgeOffset === 0 || newEdgeOffset) {
-				edgeOffset = newEdgeOffset
-			}
-			return {
-				defaultDuration: defaultDuration,
-				edgeOffset: edgeOffset
-			}
-		}
-
-		return {
-			setup: setup,
-			to: scrollToElem,
-			toY: scrollToY,
-			intoView: scrollIntoView,
-			center: scrollToCenterOf,
-			stop: stopScroll,
-			moving: function () { return !!scrollTimeoutId },
-			getY: container.getY,
-			getTopOf: container.getTopOf
-		}
-
-	}
-
-
-	var docElem = document.documentElement
-	var getDocY = function () { return window.scrollY || docElem.scrollTop }
-
-	// Create a scroller for the document:
-	var zenscroll = makeScroller({
-		body: document.scrollingElement || document.body,
-		toY: function (y) { window.scrollTo(0, y) },
-		getY: getDocY,
-		getHeight: function () { return window.innerHeight || docElem.clientHeight },
-		getTopOf: function (elem) { return elem.getBoundingClientRect().top + getDocY() - docElem.offsetTop }
-	})
-
-
-	/**
-	 * Creates a scroller from the provided container element (e.g., a DIV)
-	 *
-	 * @param {scrollContainer} The vertical position within the document.
-	 * @param {defaultDuration} Optionally a value for default duration, used for each scroll method by default.
-	 *        Ignored if 0 or null or undefined.
-	 * @param {edgeOffset} Optionally a value for the edge offset, used by each scroll method by default. 
-	 *        Ignored if null or undefined.
-	 * @returns A scroller object, similar to `zenscroll` but controlling the provided element.
-	 */
-	zenscroll.createScroller = function (scrollContainer, defaultDuration, edgeOffset) {
-		return makeScroller({
-			body: scrollContainer,
-			toY: function (y) { scrollContainer.scrollTop = y },
-			getY: function () { return scrollContainer.scrollTop },
-			getHeight: function () { return Math.min(scrollContainer.clientHeight, window.innerHeight || docElem.clientHeight) },
-			getTopOf: function (elem) { return elem.offsetTop }
-		}, defaultDuration, edgeOffset)
-	}
-
-
-	// Automatic link-smoothing on achors
-	// Exclude IE8- or when native is enabled or Zenscroll auto- is disabled
-	if ("addEventListener" in window && !window.noZensmooth && !isNativeSmoothScrollEnabledOn(document.body)) {
-
-		var isHistorySupported = "history" in window && "pushState" in history
-		var isScrollRestorationSupported = isHistorySupported && "scrollRestoration" in history
-
-		// On first load & refresh make sure the browser restores the position first
-		if (isScrollRestorationSupported) {
-			history.scrollRestoration = "auto"
-		}
-
-		window.addEventListener("load", function () {
-
-			if (isScrollRestorationSupported) {
-				// Set it to manual
-				setTimeout(function () { history.scrollRestoration = "manual" }, 9)
-				window.addEventListener("popstate", function (event) {
-					if (event.state && "zenscrollY" in event.state) {
-						zenscroll.toY(event.state.zenscrollY)
-					}
-				}, false)
-			}
-
-			// Add edge offset on first load if necessary
-			// This may not work on IE (or older computer?) as it requires more timeout, around 100 ms
-			if (window.location.hash) {
-				setTimeout(function () {
-					// Adjustment is only needed if there is an edge offset:
-					var edgeOffset = zenscroll.setup().edgeOffset
-					if (edgeOffset) {
-						var targetElem = document.getElementById(window.location.href.split("#")[1])
-						if (targetElem) {
-							var targetY = Math.max(0, zenscroll.getTopOf(targetElem) - edgeOffset)
-							var diff = zenscroll.getY() - targetY
-							// Only do the adjustment if the browser is very close to the element:
-							if (0 <= diff && diff < 9 ) {
-								window.scrollTo(0, targetY)
-							}
-						}
-					}
-				}, 9)
-			}
-
-		}, false)
-
-		// Handling clicks on anchors
-		var RE_noZensmooth = new RegExp("(^|\\s)noZensmooth(\\s|$)")
-		window.addEventListener("click", function (event) {
-			var anchor = event.target
-			while (anchor && anchor.tagName !== "A") {
-				anchor = anchor.parentNode
-			}
-			// Let the browser handle the click if it wasn't with the primary button, or with some modifier keys:
-			if (!anchor || event.which !== 1 || event.shiftKey || event.metaKey || event.ctrlKey || event.altKey) {
-				return
-			}
-			// Save the current scrolling position so it can be used for scroll restoration:
-			if (isScrollRestorationSupported) {
-				var historyState = history.state && typeof history.state === "object" ? history.state : {}
-				historyState.zenscrollY = zenscroll.getY()
-				try {
-					history.replaceState(historyState, "")
-				} catch (e) {
-					// Avoid the Chrome Security exception on file protocol, e.g., file://index.html
-				}
-			}
-			// Find the referenced ID:
-			var href = anchor.getAttribute("href") || ""
-			if (href.indexOf("#") === 0 && !RE_noZensmooth.test(anchor.className)) {
-				var targetY = 0
-				var targetElem = document.getElementById(href.substring(1))
-				if (href !== "#") {
-					if (!targetElem) {
-						// Let the browser handle the click if the target ID is not found.
-						return
-					}
-					targetY = zenscroll.getTopOf(targetElem)
-				}
-				event.preventDefault()
-				// By default trigger the browser's `hashchange` event...
-				var onDone = function () { window.location = href }
-				// ...unless there is an edge offset specified
-				var edgeOffset = zenscroll.setup().edgeOffset
-				if (edgeOffset) {
-					targetY = Math.max(0, targetY - edgeOffset)
-					if (isHistorySupported) {
-						onDone = function () { history.pushState({}, "", href) }
-					}
-				}
-				zenscroll.toY(targetY, null, onDone)
-			}
-		}, false)
-
-	}
-
-
-	return zenscroll
-
-
-}));
-
-
-/***/ }),
-
 /***/ "./resources/assets/js/app.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -51378,9 +51021,8 @@ __webpack_require__("./resources/assets/js/bootstrap.js");
 __webpack_require__("./node_modules/jquery-touchswipe/jquery.touchSwipe.min.js");
 
 __webpack_require__("./node_modules/owl.carousel/dist/owl.carousel.js");
-window.zenscroll = __webpack_require__("./node_modules/zenscroll/zenscroll.js");
-
-zenscroll.setup(1000, 20);
+/*window.zenscroll = require('zenscroll');
+zenscroll.setup(1000, 20);*/
 
 window.Vue = __webpack_require__("./node_modules/vue/dist/vue.common.js");
 window.WOW = __webpack_require__("./node_modules/wow.js/dist/wow.js");
@@ -51469,13 +51111,60 @@ $('.noaction').on('click', function (e) {
     preloader();
 })(jQuery);
 
+var $topmenu = $("#navbarHeader");
 // прячем меню при клике вне его
 $(document).mouseup(function (e) {
-    var div = $("#navbarHeader");
+    //let div = $("#navbarHeader");
     var link = $('a.nav-link');
-    if (!div.is(e.target) && div.has(e.target).length === 0 || link.is(e.target)) {
-        div.collapse('hide');
+    if (!$topmenu.is(e.target) && $topmenu.has(e.target).length === 0 || link.is(e.target)) {
+        $topmenu.collapse('hide');
     }
+});
+// прячем меню по свайпу вверх
+
+$topmenu.swipe({
+
+    swipe: function swipe(event, direction, distance, duration, fingerCount, fingerData) {
+        // console.log("You swiped " + direction );
+
+        if (direction === 'up') {
+            $topmenu.collapse('hide');
+        }
+    }
+});
+
+window.SmoothScroll = __webpack_require__("./node_modules/smooth-scroll/dist/js/smooth-scroll.min.js");
+
+window.scroller = new SmoothScroll('a[href*="#"]', {
+    // Selectors
+    ignore: '[data-noscroll]', // Selector for links to ignore (must be a valid CSS selector)
+    header: null, // Selector for fixed headers (must be a valid CSS selector)
+
+    // Speed & Easing
+    speed: 800, // Integer. How fast to complete the scroll in milliseconds
+    offset: 20, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+    easing: 'easeInOutCubic', // Easing pattern to use
+    /*customEasing: function (time) {
+         // Function. Custom easing pattern
+        // If this is set to anything other than null, will override the easing option above
+         // return <your formulate with time as a multiplier>
+         // Example: easeInOut Quad
+        return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+     },*/
+
+    // Callback API
+    before: function before(anchor, toggle) {}, // Callback to run before scroll
+    after: function after(anchor, toggle) {} // Callback to run after scroll
+});
+
+$('#services').on('shown.bs.collapse', '.collapse', function (e) {
+    console.log($(this));
+    //let anchor = $(e.target).attr('aria-labelledby');
+    //if (anchor !== undefined) {
+    var height = $('#heading1').scrollTop();
+    console.log(height);
+    scroller.animateScroll($('#heading1'));
+    //}
 });
 
 /***/ }),

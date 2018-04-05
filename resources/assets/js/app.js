@@ -9,10 +9,8 @@ require('./bootstrap');
 require('jquery-touchswipe');
 
 require('owl.carousel');
-window.zenscroll = require('zenscroll');
-
-
-zenscroll.setup(1000, 20);
+/*window.zenscroll = require('zenscroll');
+zenscroll.setup(1000, 20);*/
 
 window.Vue = require('vue');
 window.WOW = require('wow.js');
@@ -114,11 +112,69 @@ $('.noaction').on('click', function (e) {
 
 })(jQuery);
 
+
+let $topmenu = $("#navbarHeader");
 // прячем меню при клике вне его
 $(document).mouseup(function(e) {
-    let div = $("#navbarHeader");
+   //let div = $("#navbarHeader");
     let link = $('a.nav-link');
-    if ((!div.is(e.target) && div.has(e.target).length === 0) || link.is(e.target)) {
-        div.collapse('hide');
+    if ((!$topmenu.is(e.target) && $topmenu.has(e.target).length === 0) || link.is(e.target)) {
+        $topmenu.collapse('hide');
     }
+});
+// прячем меню по свайпу вверх
+
+$topmenu.swipe({
+
+    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+        // console.log("You swiped " + direction );
+
+        if(direction === 'up') {
+            $topmenu.collapse('hide');
+        }
+
+    }
+});
+
+window.SmoothScroll = require('smooth-scroll');
+
+window.scroller = new SmoothScroll(
+    'a[href*="#"]', {
+        // Selectors
+        ignore: '[data-noscroll]', // Selector for links to ignore (must be a valid CSS selector)
+        header: null, // Selector for fixed headers (must be a valid CSS selector)
+
+        // Speed & Easing
+        speed: 800, // Integer. How fast to complete the scroll in milliseconds
+        offset: 20, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+        easing: 'easeInOutCubic', // Easing pattern to use
+        /*customEasing: function (time) {
+
+            // Function. Custom easing pattern
+            // If this is set to anything other than null, will override the easing option above
+
+            // return <your formulate with time as a multiplier>
+
+            // Example: easeInOut Quad
+            return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+
+        },*/
+
+        // Callback API
+        before: function (anchor, toggle) {}, // Callback to run before scroll
+        after: function (anchor, toggle) {
+
+
+        } // Callback to run after scroll
+    });
+
+
+$('#services').on('shown.bs.collapse', '.collapse', function (e) {
+    console.log($(this));
+    //let anchor = $(e.target).attr('aria-labelledby');
+    //if (anchor !== undefined) {
+       let height = $('#heading1').scrollTop();
+       console.log(height);
+       scroller.animateScroll($('#heading1'));
+    //}
 });

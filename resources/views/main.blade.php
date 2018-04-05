@@ -105,22 +105,22 @@
         <section class="professional_builder gray_bgr">
             <div class="container">
                 <div class="row builder_all">
-                    <div class="col-md-3 col-sm-6 builder">
+                    <div class="col-6 col-md-3 builder">
                         <i class="fas fa-tasks fa-4x text-primary"></i>
                         <h4>Все услуги</h4>
                         <p>Наша компания предлагает полный спектр бытовых услуг.</p>
                     </div>
-                    <div class="col-md-3 col-sm-6 builder">
+                    <div class="col-6 col-md-3 builder">
                         <i class="fas fa-clock fa-4x text-primary"></i>
                         <h4>Быстро и удобно</h4>
                         <p>Наш мастер приедет в кратчайшие сроки и окажет все необходимые услуги</p>
                     </div>
-                    <div class="col-md-3 col-sm-6 builder">
+                    <div class="col-6 col-md-3 builder">
                         <i class="fas fa-check-square fa-4x text-primary"></i>
                         <h4>Надёжно</h4>
                         <p>Наши мастера выполнят любые услуги максимально качественно</p>
                     </div>
-                    <div class="col-md-3 col-sm-6 builder">
+                    <div class="col-6 col-md-3 builder">
                         <i class="fas fa-thumbs-up fa-4x text-primary"></i>
                         <h4>Выгодно</h4>
                         <p>Вы получаете гарантированное качество по приемлимым ценам</p>
@@ -204,7 +204,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-lg-3">
+                        <div class="col-6 col-lg-3">
                             <div class="card bg-transparent border-0 text-center">
                                 <img class="card-img-top" src="/img/icons/phone-300.png" alt="Card image cap">
                                 <div class="card-body">
@@ -215,7 +215,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3">
+                        <div class="col-6 col-lg-3">
                             <div class="card bg-transparent border-0 text-center">
                                 <img class="card-img-top" src="/img/icons/detail-300.png" alt="Card image cap">
                                 <div class="card-body">
@@ -225,7 +225,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3">
+                        <div class="col-6 col-lg-3">
                             <div class="card bg-transparent border-0 text-center">
                                 <img class="card-img-top" src="/img/icons/car-300.png" alt="Card image cap">
                                 <div class="card-body">
@@ -235,7 +235,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3">
+                        <div class="col-6 col-lg-3">
                             <div class="card bg-transparent border-0 text-center">
                                 <img class="card-img-top" src="/img/icons/ok-300.png" alt="Card image cap">
                                 <div class="card-body">
@@ -256,7 +256,7 @@
                     <h2 id="emergency">Экстренный вызов мастера</h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 col-lg-3 icon-font">
+                    <div class="col-md-4 col-lg-3 icon-font" data-toggle="modal" data-target="#callModal">
                         <i class="fas fa-exclamation-triangle text-primary"></i>
                         <small class="text-info">круглосуточно</small>
                     </div>

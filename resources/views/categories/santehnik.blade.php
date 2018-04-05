@@ -38,7 +38,7 @@
                     <h2>Экстренный вызов сантехника</h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 col-lg-3 icon-font">
+                    <div class="col-md-4 col-lg-3 icon-font" data-toggle="modal" data-target="#callModal">
                         <i class="fas fa-exclamation-triangle text-primary"></i>
                         <small class="text-info">круглосуточно</small>
                     </div>
@@ -76,7 +76,7 @@
                 <div id="services">
                     <div class="card">
                         <div class="card-header p-0" id="heading1">
-                            <a class="noZensmooth collapsed" role="button" href="#" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            <a class="collapsed" role="button" href="#" data-noscroll data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
                                <img class="img-fluid service-icon" src="/img/icons/sink-icon-150.png"> Сантехника
                             </a>
                         </div>
@@ -199,7 +199,7 @@
                     </div>
                     <div class="card">
                         <div class="card-header p-0" id="heading2">
-                            <a class="noZensmooth collapsed" href="#" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse1">
+                            <a class="collapsed" href="#heading2" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse1">
                                 <img class="img-fluid service-icon" src="/img/icons/water-icon-150.png"> Водоснабжение
                             </a>
                         </div>
