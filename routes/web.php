@@ -16,3 +16,5 @@ Route::get('/', 'MainController@index');
 
 Route::get('{category}/{group?}/{service?}', 'MainController@category')
     ->where(['category' => '[a-z]+', 'group' => '[a-z_]+]', 'service' => '[a-z_]+']);
+
+Route::post('/call', 'FeedbackController@call')->name('call');

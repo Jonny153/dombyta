@@ -234,3 +234,33 @@ form.outline-secondary {
 
     }
 }
+.form-group {
+    small.help-block {
+        font-size: 70%;
+        display: block;
+        margin-top: 0.5rem;
+    }
+    &.has-success {
+        small.help-block {
+            color: $primary;
+        }
+    }
+    &.has-error {
+        small.help-block {
+            color: red;
+        }
+        input.form-control,
+        textarea.form-control {
+            border-color: red;
+            &:focus {
+                box-shadow: 0 0 0 0.2rem rgba(208, 0, 0, 0.3);
+            }
+        }
+        .custom-control-label::before {
+            background-color: rgba(208, 0, 0, 0.4);
+        }
+        .custom-control-input:focus ~ .custom-control-label::before {
+            box-shadow: 0 0 0 0.2rem rgba(208, 0, 0, 0.3);
+        }
+    }
+}

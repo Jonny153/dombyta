@@ -266,6 +266,40 @@ form.outline-secondary textarea:focus {
   color: #000;
 }
 
+.form-group small.help-block {
+  font-size: 70%;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.form-group.has-success small.help-block {
+  color: #fed017;
+}
+
+.form-group.has-error small.help-block {
+  color: red;
+}
+
+.form-group.has-error input.form-control,
+.form-group.has-error textarea.form-control {
+  border-color: red;
+}
+
+.form-group.has-error input.form-control:focus,
+.form-group.has-error textarea.form-control:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(208, 0, 0, 0.3);
+          box-shadow: 0 0 0 0.2rem rgba(208, 0, 0, 0.3);
+}
+
+.form-group.has-error .custom-control-label::before {
+  background-color: rgba(208, 0, 0, 0.4);
+}
+
+.form-group.has-error .custom-control-input:focus ~ .custom-control-label::before {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(208, 0, 0, 0.3);
+          box-shadow: 0 0 0 0.2rem rgba(208, 0, 0, 0.3);
+}
+
 .professional_builder {
   padding-top: 80px;
   padding-bottom: 50px;

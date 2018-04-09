@@ -8,13 +8,14 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form class="outline-secondary">
+            <form class="outline-secondary" id="callForm" action="/call" method="post">
+                {{ csrf_field() }}
                 <div class="modal-body form-row">
-                    <div class="col-md-6 mb-1">
-                        <input type="text" class="form-control" placeholder="Ваше имя">
+                    <div class="col-md-6 mb-1 form-group">
+                        <input type="text" class="form-control" id="name" name="person" placeholder="Ваше имя">
                     </div>
-                    <div class="col-md-6 mb-1">
-                        <input type="text" class="form-control" placeholder="Телефон*">
+                    <div class="col-md-6 mb-1 form-group">
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Телефон*">
                     </div>
                 </div>
                 <div class="modal-footer">

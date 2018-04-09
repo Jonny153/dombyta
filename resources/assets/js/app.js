@@ -15,6 +15,8 @@ zenscroll.setup(1000, 20);*/
 
 window.WOW = require('wow.js');
 
+window.Inputmask = require("inputmask/dist/inputmask/inputmask.numeric.extensions");
+
 
 
 
@@ -158,4 +160,75 @@ $('#services').on('shown.bs.collapse', '.collapse', menuHeight, function (e) {
     console.log(menuHeight);
     let anchor = document.querySelector($(e.target).data('backlink'));
     scroller.animateScroll(anchor, anchor, { speed: 300, offset:menuHeight });
+});
+
+let im = new Inputmask("+7(999)999-99-99");
+im.mask($('#phone'));
+
+
+require('./formvalidation.js');
+
+function message(text, mode) {
+
+    let color = (mode) ? 'success' : 'danger';
+    let message  = '<div class="message btn-'+color+'"><strong><i class="fa fa-check-circle"></i> '+text+'</strong></div>';
+    $("body").append(message);
+    setTimeout(function(){
+        $('.message').fadeIn('slow');
+        setTimeout(function(){
+            $('.message').fadeOut('slow').remove();
+        }, 4000);
+    }, 500);
+}
+
+$(document).ready(function(){
+    //Валидация формы обратного звонка
+    $('#callForm').formValidation({
+
+        fields: {
+            'person': {
+                validators: {
+                    stringLength: {
+                        message: 'Имя не должно превышать 50 символов',
+                        max: 50
+                    }
+                }
+            },
+            'phone': {
+                validators: {
+                    notEmpty: {
+                        message: 'Введите телефон'
+                    },
+                    regexp: {
+                        regexp: /^(\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9})?$/i,
+                        message: 'Введите номер телефона'
+                    }
+                }
+            }
+        }
+    }).on('success.form.fv', function(e) {
+        e.preventDefault();
+        let $form = $(e.target);
+        let fv = $form.data('formValidation');
+
+        $.post($form.attr('action'), $form.serialize(), function(result) {
+
+            if(result.status === 'ok') {
+                fv.resetForm();
+                $form.trigger('reset');
+                $('#callModal').modal('hide');
+
+                message(result.message, true);
+            }
+            else {
+
+                fv.resetForm();
+                message(result.message, false);
+            }
+
+
+
+            console.log(result);
+        },'json');
+    });
 });

@@ -10,6 +10,9 @@
                 <li data-target="#carousel" data-slide-to="1"></li>
                 <li data-target="#carousel" data-slide-to="2"></li>
                 <li data-target="#carousel" data-slide-to="3"></li>
+                <li data-target="#carousel" data-slide-to="4"></li>
+                <li data-target="#carousel" data-slide-to="5"></li>
+                <li data-target="#carousel" data-slide-to="6"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
@@ -86,6 +89,64 @@
                             <a href="/otdelka_i_remont" class="btn btn-lg btn-primary wow bounceIn" data-wow-duration="1s" data-wow-delay="2s">Выбрать услугу</a>
                         </div>
                     </div>
+                </div>
+                <!-- /.carousel-item -->
+
+                <div class="carousel-item">
+                    <picture>
+                        <source srcset="/img/slider/1920x800/cleaning.jpg" media="(min-width: 1400px)">
+                        <source srcset="/img/slider/1400x700/cleaning.jpg" media="(min-width: 769px)">
+                        <source srcset="/img/slider/800x500/cleaning.jpg" media="(min-width: 577px)">
+                        <img srcset="/img/slider/600x500/cleaning.jpg" alt="responsive image" class="d-block img-fluid">
+                    </picture>
+
+                    <div class="carousel-caption">
+                        <div class="mb-2">
+                            <h2 class="display-4 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Уборка</h2>
+                            <p class="lead wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Наша профессиональная команда выполнит уборку любой сложности в Калининграде!</p>
+                            <a href="/cleaning" class="btn btn-lg btn-primary wow bounceIn" data-wow-duration="1s" data-wow-delay="2s">Выбрать услугу</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.carousel-item -->
+
+                <div class="carousel-item">
+
+                    <picture>
+                        <source srcset="/img/slider/1920x800/himchistka.jpg" media="(min-width: 1400px)">
+                        <source srcset="/img/slider/1400x700/himchistka.jpg" media="(min-width: 769px)">
+                        <source srcset="/img/slider/800x500/himchistka.jpg" media="(min-width: 577px)">
+                        <img srcset="/img/slider/600x500/himchistka.jpg" alt="responsive image" class="d-block img-fluid">
+                    </picture>
+
+                    <div class="carousel-caption">
+                        <div class="mb-2">
+                            <h2 class="display-4 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Химчистка</h2>
+                            <p class="lead wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Химчистка мягкой мебели и ковровых покрытий в Калининграде!</p>
+                            <a href="/himchistka" class="btn btn-lg btn-primary wow bounceIn" data-wow-duration="1s" data-wow-delay="2s">Выбрать услугу</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.carousel-item -->
+
+                <div class="carousel-item">
+
+                    <picture>
+                        <source srcset="/img/slider/1920x800/dezinsekt.jpg" media="(min-width: 1400px)">
+                        <source srcset="/img/slider/1400x700/dezinsekt.jpg" media="(min-width: 769px)">
+                        <source srcset="/img/slider/800x500/dezinsekt.jpg" media="(min-width: 577px)">
+                        <img srcset="/img/slider/600x500/dezinsekt.jpg" alt="responsive image" class="d-block img-fluid">
+                    </picture>
+
+                    <div class="carousel-caption">
+                        <div class="mb-2">
+                            <h2 class="display-4 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Дезинсекция</h2>
+                            <p class="lead wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Уничтожение всех видов насекомых и грызунов в Калининграде!</p>
+                            <a href="/dezinsekt" class="btn btn-lg btn-primary wow bounceIn" data-wow-duration="1s" data-wow-delay="2s">Выбрать услугу</a>
+                        </div>
+                    </div>
+
                 </div>
                 <!-- /.carousel-item -->
 
