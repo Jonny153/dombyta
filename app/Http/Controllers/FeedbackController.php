@@ -12,7 +12,7 @@ class FeedbackController extends Controller
     {
         try {
 
-            Mail::to(['info@clean39.ru'])->send(new SiteCall($request->post()));
+            Mail::to(['j153.mobile@yandex.ru'])->send(new SiteCall($request->post()));
 
         } catch (\Exception $exception) {
 
