@@ -42927,11 +42927,9 @@ var preloader = function preloader() {
     if ($('.preloader').length) {
         $(window).on('load', function () {
             $('.preloader').delay(500).fadeOut('slow');
-            //$('body').delay(500).css({'overflow':'visible'});
         });
     }
 };
-
 preloader();
 
 // прячем меню при клике вне его
@@ -42965,8 +42963,9 @@ var scrollerOptions = {
 window.scroller = new SmoothScroll('a[href*="#"]', scrollerOptions);
 
 var menuHeight = $('.navbar').outerHeight();
+$('body').css('padding-top', menuHeight);
 $('#services').on('shown.bs.collapse', '.collapse', menuHeight, function (e) {
-    console.log(menuHeight);
+
     var anchor = document.querySelector($(e.target).data('backlink'));
     scroller.animateScroll(anchor, anchor, { speed: 300, offset: menuHeight });
 });
