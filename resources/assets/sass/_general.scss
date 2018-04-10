@@ -264,3 +264,13 @@ form.outline-secondary {
         }
     }
 }
+
+.alert.alert-fixed {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    z-index: 10000;
+    border-radius: 0;
+    display: none;
+}

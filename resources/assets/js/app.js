@@ -163,7 +163,7 @@ $('#services').on('shown.bs.collapse', '.collapse', menuHeight, function (e) {
 });
 
 let im = new Inputmask("+7(999)999-99-99");
-im.mask($('#phone'));
+im.mask($('[name="phone"]'));
 
 
 require('./formvalidation.js');
@@ -171,19 +171,41 @@ require('./formvalidation.js');
 function message(text, mode) {
 
     let color = (mode) ? 'success' : 'danger';
-    let message  = '<div class="message btn-'+color+'"><strong><i class="fa fa-check-circle"></i> '+text+'</strong></div>';
+    let message  = '<div class="alert alert-fixed alert-'+color+'"><strong><i class="fa fa-check-circle"></i> '+text+'</strong></div>';
     $("body").append(message);
     setTimeout(function(){
-        $('.message').fadeIn('slow');
+        $('.alert').slideDown('slow');
         setTimeout(function(){
-            $('.message').fadeOut('slow').remove();
+            $('.alert').slideUp('slow').remove();
         }, 4000);
     }, 500);
 }
 
+let response = function (event) {
+    event.preventDefault();
+    let $form = $(event.target);
+    let fv = $form.data('formValidation');
+    $('.modal').modal('hide');
+    $.post($form.attr('action'), $form.serialize(), function(result) {
+
+        if(result.status === 'ok') {
+            fv.resetForm();
+            $form.trigger('reset');
+            message(result.message, true);
+        }
+        else {
+
+            fv.resetForm();
+            message(result.message, false);
+        }
+
+        //console.log(result);
+    },'json');
+};
+
 $(document).ready(function(){
     //Валидация формы обратного звонка
-    $('#callForm').formValidation({
+    $('#callForm, #staticCallForm').formValidation({
 
         fields: {
             'person': {
@@ -207,28 +229,58 @@ $(document).ready(function(){
             }
         }
     }).on('success.form.fv', function(e) {
-        e.preventDefault();
-        let $form = $(e.target);
-        let fv = $form.data('formValidation');
-
-        $.post($form.attr('action'), $form.serialize(), function(result) {
-
-            if(result.status === 'ok') {
-                fv.resetForm();
-                $form.trigger('reset');
-                $('#callModal').modal('hide');
-
-                message(result.message, true);
-            }
-            else {
-
-                fv.resetForm();
-                message(result.message, false);
-            }
-
-
-
-            console.log(result);
-        },'json');
+        response(e);
     });
+
+    //Валидация формы отзывов
+    $('#feedbackForm').formValidation({
+
+        fields: {
+            'person': {
+                validators: {
+                    notEmpty: {
+                        message: 'Введите имя'
+                    },
+                    stringLength: {
+                        message: 'Имя не должно превышать 50 символов',
+                        max: 50
+                    }
+                }
+            },
+            'feedback': {
+                validators: {
+                    notEmpty: {
+                        message: 'Введите отзыв'
+                    },
+                    stringLength: {
+                        message: 'Отзыв не должен превышать 500 символов',
+                        max: 500
+                    }
+                }
+            },
+            'phone': {
+                validators: {
+                    notEmpty: {
+                        message: 'Введите телефон'
+                    },
+                    regexp: {
+                        regexp: /^(\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9})?$/i,
+                        message: 'Введите номер телефона'
+                    }
+                }
+            }
+        }
+    }).on('success.form.fv', function(e) {
+        response(e);
+    });
+
+
+});
+
+$('.modal').on('hidden.bs.modal', function (e) {
+    let $form = $(e.target).find('form');
+    let fv = $('#callForm').data('formValidation');
+    fv.resetForm();
+    $form.trigger('reset');
+
 });

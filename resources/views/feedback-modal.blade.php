@@ -8,20 +8,22 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form class="outline-secondary">
+            <form class="outline-secondary" id="feedbackForm" action="/feedback" method="post">
+                {{ csrf_field() }}
                 <div class="modal-body form-row">
-                    <div class="col-md-6 mb-1">
-                        <input type="text" class="form-control" placeholder="Ваше имя">
+                    <div class="col-md-6 mb-1 form-group">
+                        <input type="text" class="form-control" name="person" placeholder="Ваше имя*">
                     </div>
-                    <div class="col-md-6 mb-1">
-                        <input type="text" class="form-control" placeholder="Телефон*">
+                    <div class="col-md-6 mb-1 form-group">
+                        <input type="tel" class="form-control" name="phone" placeholder="Телефон*">
                     </div>
-                    <div class="col-md-12 mb-1">
-                        <textarea class="form-control" rows="3"></textarea>
+                    <div class="col-md-12 mb-1 form-group">
+                        <label>Отзыв*</label>
+                        <textarea class="form-control" name="feedback" rows="3"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-dark" data-dismiss="modal">Закрыть</button>
+                    <button type="reset" class="btn btn-dark" data-dismiss="modal">Закрыть</button>
                     <button type="submit" class="btn btn-primary">Отправить</button>
                 </div>
             </form>

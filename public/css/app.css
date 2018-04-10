@@ -300,6 +300,16 @@ form.outline-secondary textarea:focus {
           box-shadow: 0 0 0 0.2rem rgba(208, 0, 0, 0.3);
 }
 
+.alert.alert-fixed {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  z-index: 10000;
+  border-radius: 0;
+  display: none;
+}
+
 .professional_builder {
   padding-top: 80px;
   padding-bottom: 50px;

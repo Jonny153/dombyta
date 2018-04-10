@@ -53,15 +53,17 @@
                             немедленно приедут и устранят проблему. Также вы можете заполнить форму ниже и мы
                             свяжемся с вами в ближайшее время.
                         </p>
-                        <form class="outline-primary">
+                        <form class="outline-primary" id="staticCallForm" action="/call" method="post">
+                            {{ csrf_field() }}
+                            <input type="hidden" name="type" value="Экстренный вызов сантехника">
                             <div class="form-row">
-                                <div class="col-md-5 mb-1">
-                                    <input type="text" class="form-control" placeholder="Ваше имя">
+                                <div class="col-md-5 mb-1 form-group">
+                                    <input type="text" class="form-control" name="person" placeholder="Ваше имя">
                                 </div>
-                                <div class="col-md-5 mb-1">
-                                    <input type="text" class="form-control" placeholder="Телефон*">
+                                <div class="col-md-5 mb-1 form-group">
+                                    <input type="tel" class="form-control" name="phone" placeholder="Телефон*">
                                 </div>
-                                <div class="col-md-2 mb-1">
+                                <div class="col-md-2 mb-1 form-group">
                                     <button type="submit" class="btn btn-primary btn-block">Отправить</button>
                                 </div>
                             </div>
