@@ -60,15 +60,16 @@ button::-moz-focus-inner {
 }
 
 body {
-    padding-top: 76px;
-    @media (max-width:767px) {
+    padding-top: 78px;
+    @media (max-width:460px) {
+        padding-top:78px;
+    }
+    @media (min-width:461px) and (max-width:767px) {
         padding-top: 63px;
     }
-    @media (max-width:460px) {
-        padding-top: 53px;
-    }
-    @media (max-width:320px) {
-        padding-top: 78px;
+
+    @media (min-width:768px) {
+        padding-top: 75px;
     }
 
 

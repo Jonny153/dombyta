@@ -69,24 +69,24 @@ button::-moz-focus-inner {
 }
 
 body {
-  padding-top: 76px;
+  padding-top: 78px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 460px) {
+  body {
+    padding-top: 78px;
+  }
+}
+
+@media (min-width: 461px) and (max-width: 767px) {
   body {
     padding-top: 63px;
   }
 }
 
-@media (max-width: 460px) {
+@media (min-width: 768px) {
   body {
-    padding-top: 53px;
-  }
-}
-
-@media (max-width: 320px) {
-  body {
-    padding-top: 78px;
+    padding-top: 75px;
   }
 }
 

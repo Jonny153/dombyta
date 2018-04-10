@@ -151,9 +151,8 @@ window.scroller = new SmoothScroll(
     );
 
 let menuHeight = $('.navbar').outerHeight();
-$('body').css('padding-top', menuHeight);
 $('#services').on('shown.bs.collapse', '.collapse', menuHeight, function (e) {
-
+console.log(menuHeight);
     let anchor = document.querySelector($(e.target).data('backlink'));
     scroller.animateScroll(anchor, anchor, { speed: 300, offset:menuHeight });
 });
