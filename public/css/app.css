@@ -407,6 +407,12 @@ form.outline-secondary textarea:focus {
   }
 }
 
+@media (max-width: 767px) {
+  .intro p.lead {
+    font-size: 0.8rem;
+  }
+}
+
 .icon-font {
   text-align: center;
   font-size: 12rem;

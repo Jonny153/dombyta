@@ -60,7 +60,7 @@
                                 <nav class="nav main flex-column text-center">
                                     <a class="nav-link" href="/santehnik">Сантехник</a>
                                     <a class="nav-link" href="/electrik">Электрик</a>
-                                    <a class="nav-link" href="/otdelka_i_remont">Отделка</a>
+                                    <a class="nav-link" href="/otdelka">Отделка</a>
                                     <a class="nav-link" href="/cleaning">Уборка</a>
                                     <a class="nav-link" href="/himchistka">Химчистка</a>
                                     <a class="nav-link" href="/dezinsekt">Дезинсекция</a>
@@ -108,7 +108,7 @@
                                 <nav class="nav flex-column text-uppercase text-center">
                                     <a class="nav-link" href="/santehnik">Сантехник</a>
                                     <a class="nav-link" href="/electrik">Электрик</a>
-                                    <a class="nav-link" href="/otdelka_i_remont">Отделка и ремонт</a>
+                                    <a class="nav-link" href="/otdelka">Отделка и ремонт</a>
                                     <a class="nav-link" href="/cleaning">Уборка</a>
                                     <a class="nav-link" href="/himchistka">Химчистка</a>
                                     <a class="nav-link" href="/dezinsekt">Дезинсекция</a>

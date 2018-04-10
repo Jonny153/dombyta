@@ -102,7 +102,7 @@
 
                     <div class="carousel-caption">
                         <div class="mb-2">
-                            <h2 class="display-4 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Уборка</h2>
+                            <h2 class="display-4 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Клининговые услуги</h2>
                             <p class="lead wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Наша профессиональная команда выполнит уборку любой сложности в Калининграде!</p>
                             <a href="/cleaning" class="btn btn-lg btn-primary wow bounceIn" data-wow-duration="1s" data-wow-delay="2s">Выбрать услугу</a>
                         </div>
@@ -221,7 +221,7 @@
                         </a>
                     </div>
                     <div class="col d-flex justify-content-center">
-                        <a href="/otdelka_i_remont">
+                        <a href="/otdelka">
                             <img src="/img/icons/remont-100.png" alt="Ремонт и отделка" class="m-3">
                             <h3 class="text-info text-uppercase">Ремонт</h3>
                         </a>

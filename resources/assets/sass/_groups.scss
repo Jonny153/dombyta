@@ -33,6 +33,14 @@
 }
 
 
+.intro {
+    p.lead {
+        @media (max-width:767px) {
+            font-size: 0.8rem;
+        }
+    }
+}
+
 .icon-font {
     text-align: center;
     font-size: 12rem;
