@@ -18,7 +18,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 
-        <title>@yield('title')</title>
+        <title>@yield('title') - Дом Быта 39</title>
 
 
         <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
@@ -149,5 +149,6 @@
 
         <script src="{{ mix('/js/app.js') }}"></script>
         @yield('scripts')
+        @include('counters')
     </body>
 </html>

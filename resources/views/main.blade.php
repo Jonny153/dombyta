@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Главная страница')
+@section('title', 'Бытовые услуги в Калининграде и области')
 
 @section('content')
     <div class="content">

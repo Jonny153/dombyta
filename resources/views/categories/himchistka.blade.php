@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Услуги сантехника')
+@section('title', 'Химчистка мебели и ковровых покрытий')
 
 @section('content')
     <div class="content">

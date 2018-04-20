@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Услуги сантехника')
+@section('title', 'Вызов электрика в Калининграде')
 
 @section('content')
     <div class="content">

@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Услуги сантехника')
+@section('title', 'Уничтожение грызунов и насекомых в Калининграде и области')
 
 @section('content')
     <div class="content">
