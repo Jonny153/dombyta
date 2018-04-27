@@ -17,7 +17,7 @@ class FeedbackController extends Controller
      */
     public function __construct()
     {
-        $this->emails = ['j153.mobile@yandex.ru'];
+        $this->emails = ['j153.mobile@yandex.ru', 'AndrosovS87@yandex.ru'];
     }
 
 
