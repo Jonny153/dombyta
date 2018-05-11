@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
 use Illuminate\Http\Request;
 use App\Models\Category;
 
@@ -18,14 +19,31 @@ class MainController extends Controller
 
     public function category($category, $service = null)
     {
-        $categoryModel = Category::where('alias', $category)->firstOrFail();
+
 
         if (is_null($service)) {
-            return view('categories/' . $category, ['page' => $category]);
+
+            $categoryModel = Category::where('alias', $category)->firstOrFail();
+            return view('categories/' . $category,
+                [
+                    'data' => $categoryModel,
+                    'page' => $category
+                ]);
+        } else {
+
+            $serviceModel = Service::where('alias', $service)
+                ->whereHas('category', function ($query) use ($category) {
+                $query->where('alias', $category);
+            })->firstOrFail();
+
+            //dd($serviceModel);
+
+            return view('services/' . $category . '/' . $service,
+                [
+                    'data' => $serviceModel,
+                    'page' => $category.'.'.$service
+                ]);
         }
 
-        return false;
-
-        //var_dump($categoryModel);
     }
 }

@@ -32,6 +32,52 @@
             </div>
         </section>
 
+        <section class="container my-5">
+            <div class="title_black">
+                <a href="/cleaning/general"><img src="/img/icons/clean-general-icon.png" class="img-fluid d-block mx-auto"></a>
+                <h2>Основная уборка</h2>
+            </div>
+
+            <p class="lead text-center">Основная уборка – это уборка, предназначенная для наведения тщательной
+                чистоты и порядка в доме. Ее рекомендуется проводить хотя бы раз в месяц.</p>
+
+            <p class="display-4 text-center my-5">от 100&#8381; за кв.м.</p>
+
+            <div class="text-center py-3 mb-5 gray_bgr">
+                <a href="/cleaning/general" class="btn btn-primary" >Подробнее</a>
+            </div>
+
+        </section>
+
+        <section class="container my-5">
+            <div class="title_black">
+                <a href="/cleaning/express"><img src="/img/icons/clean-express-icon.png" class="img-fluid d-block mx-auto"></a>
+                <h2>Экспресс уборка</h2>
+            </div>
+
+            <p class="lead text-center">Экспресс уборка – это уборка, предназначенная для поддержания чистоты в доме,
+                она отлично подходит в качестве регулярной уборки, экономит Ваше время и деньги.</p>
+
+            <p class="display-4 text-center my-5">от 50&#8381; за кв.м.</p>
+
+            <div class="text-center py-3 mb-5 gray_bgr">
+                <a href="/cleaning/express" class="btn btn-primary" >Подробнее</a>
+            </div>
+
+        </section>
+
+        <section class="container my-5">
+            <div class="title_black">
+                <img src="/img/icons/clean-afterconstruct-icon.png" class="img-fluid d-block mx-auto">
+                <h2>Уборка после ремонта</h2>
+            </div>
+
+            <p class="display-4 text-center my-5">от 150&#8381; за кв.м.</p>
+
+
+
+        </section>
+
 
 
        
