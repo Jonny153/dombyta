@@ -250,6 +250,13 @@ $(document).ready(function(){
                     stringLength: {
                         message: 'Отзыв не должен превышать 500 символов',
                         max: 500
+                    },
+                    callback: {
+                        message: 'Уберите ссылки из текста',
+                        callback: function (value, validator, $field) {
+                            var result = value.match(/.*https?.*/gmi );
+                            return result === null;
+                        }
                     }
                 }
             },

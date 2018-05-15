@@ -16,7 +16,7 @@
 
         <p>Телефон: {{ $contacts['phone'] }}</p>
         <p>Имя: {{ $contacts['person'] }}</p>
-        <p>Имя: {{ $contacts['feedback'] }}</p>
+        <p>Отзыв: {{ $contacts['feedback'] }}</p>
 
     </body>
 </html>
