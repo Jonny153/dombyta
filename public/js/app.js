@@ -42992,7 +42992,7 @@ var response = function response(event) {
     var $form = $(event.target);
     var fv = $form.data('formValidation');
     $('.modal').modal('hide');
-    $.post($form.attr('action'), $form.serialize(), function (result) {
+    $.post($form.data('handler'), $form.serialize(), function (result) {
 
         if (result.status === 'ok') {
             fv.resetForm();

@@ -331,7 +331,7 @@
                             немедленно приедут и устранят проблему. Также вы можете заполнить форму ниже и мы
                             свяжемся с вами в ближайшее время.
                         </p>
-                        <form class="outline-primary" id="staticCallForm" action="/call" method="post">
+                        <form class="outline-primary" id="staticCallForm" action=""  data-handler="/call" method="post">
                             {{ csrf_field() }}
                             <input type="hidden" name="type" value="Экстренный вызов на главной странице">
                             <div class="form-row">
