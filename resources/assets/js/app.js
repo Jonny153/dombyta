@@ -55,51 +55,6 @@ $('#carousel, #carouselFeedback').on('swipe', function(e, touch) {
     }
 });
 
-/*
-
-$(function() {
-    let $carusel = $("#carousel");
-
-    $carusel.swipe({
-
-        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-           // console.log("You swiped " + direction );
-
-            if(direction === 'left') {
-                $carusel.carousel('next');
-            }
-            if(direction === 'right') {
-                $carusel.carousel('prev');
-            }
-        }
-    });
-
-    let $carusel2 = $("#carouselFeedback");
-
-    $carusel2.swipe({
-
-        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-            // console.log("You swiped " + direction );
-
-            if(direction === 'left') {
-                $carusel2.carousel('next');
-            }
-            if(direction === 'right') {
-                $carusel2.carousel('prev');
-            }
-        }
-    });
-
-});
-
-*/
-
-
-
-
-
-
-
 
 
 let preloader = function(){

@@ -86,7 +86,7 @@
                         <div class="mb-2">
                             <h2 class="display-4 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Отделка и ремонт</h2>
                             <p class="lead wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Профессионалы компании «Дом Быта 39» выполнят любые отделочные, строительные и ремонтные работы в Калининграде!</p>
-                            <a href="/otdelka_i_remont" class="btn btn-lg btn-primary wow bounceIn" data-wow-duration="1s" data-wow-delay="2s">Выбрать услугу</a>
+                            <a href="/otdelka" class="btn btn-lg btn-primary wow bounceIn" data-wow-duration="1s" data-wow-delay="2s">Выбрать услугу</a>
                         </div>
                     </div>
                 </div>
@@ -152,11 +152,11 @@
 
             </div>
             <!-- /.carousel-inner -->
-            <a class="carousel-control-prev noAction noZensmooth" href="#carousel" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carousel" data-noscroll role="button" data-slide="prev">
                 <i class="fas fa-chevron-left fa-2x text-primary"></i>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next noAction noZensmooth" href="#carousel" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carousel" data-noscroll role="button" data-slide="next">
                 <i class="fas fa-chevron-right fa-2x text-primary"></i>
                 <span class="sr-only">Next</span>
             </a>

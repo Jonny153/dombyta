@@ -32,7 +32,73 @@
             </div>
         </section>
 
+        <section class="container my-5">
+            <div class="title_black">
+                <img src="/img/icons/otdelka-icon.png" class="img-fluid d-block mx-auto">
+                <h2>Отделка квартир и помещений</h2>
+            </div>
 
+            <p class="lead text-center">Компания «Дом Быта 39» выполняет отделку квартир и помещений под ключ в Калининграде и Калининградской области</p>
+
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col" class="text-primary">Тип отделки</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Эконом</td>
+
+                    </tr>
+                    <tr>
+                        <td>Стандарт</td>
+
+                    </tr>
+                    <tr>
+                        <td>Премиум</td>
+
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+
+        <section class="container my-5">
+            <div class="title_black">
+                <img src="/img/icons/remont-icon.png" class="img-fluid d-block mx-auto">
+                <h2>Ремонт квартир и помещений</h2>
+            </div>
+
+            <p class="lead text-center">Специалисты компании «Дом Быта 39» выполнят ремонт любых помещений в соответствии
+            с пожеланиями заказчика и в кратчайшие сроки.</p>
+
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col" class="text-primary">Виды ремонта</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Косметический ремонт</td>
+
+                    </tr>
+                    <tr>
+                        <td>Капитальный ремонт</td>
+
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
 
        
 
